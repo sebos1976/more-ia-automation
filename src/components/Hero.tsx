@@ -52,29 +52,20 @@ export const Hero = () => {
             </div>
           </div>
           
-          <div className="hero-stats-widget">
-            <div className="stat-card">
-              <div className="stat-icon-gradient stat-users"></div>
-              <div className="stat-content">
-                <div className="stat-number">200+</div>
-                <div className="stat-label">Propriétaires accompagnés</div>
-              </div>
+          <div className="hero-stats-improved">
+            <div className="stat-card-improved">
+              <div className="stat-number-large">200+</div>
+              <div className="stat-label-clear">Propriétaires accompagnés</div>
             </div>
             
-            <div className="stat-card">
-              <div className="stat-icon-gradient stat-time"></div>
-              <div className="stat-content">
-                <div className="stat-number">90%</div>
-                <div className="stat-label">De temps économisé</div>
-              </div>
+            <div className="stat-card-improved">
+              <div className="stat-number-large">90%</div>
+              <div className="stat-label-clear">De temps économisé</div>
             </div>
             
-            <div className="stat-card">
-              <div className="stat-icon-gradient stat-support"></div>
-              <div className="stat-content">
-                <div className="stat-number">24/7</div>
-                <div className="stat-label">Disponibilité</div>
-              </div>
+            <div className="stat-card-improved">
+              <div className="stat-number-large">24/7</div>
+              <div className="stat-label-clear">Disponibilité</div>
             </div>
           </div>
         </div>
@@ -109,7 +100,7 @@ export const Hero = () => {
                   </div>
                   <div className="message ai">
                     <div>
-                      <div className="message-bubble">Le check-in est à partir de 16h. Je vous enverrai le code d'accès 1h avant votre arrivée 😊</div>
+                      <div className="message-bubble">Le check-in est à partir de 16h. Je vous enverrai le code d'accès 1h avant votre arrivée</div>
                       <div className="message-time">14:32</div>
                     </div>
                   </div>

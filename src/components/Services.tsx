@@ -3,151 +3,83 @@ export const Services = () => {
   return (
     <section id="services" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="section-header">
-          <div className="section-badge">
-            <div className="badge-icon"></div>
-            <span>Nos Solutions</span>
-          </div>
-          <h2 className="text-4xl font-semibold mb-4">Automatisation Complète de Votre Airbnb</h2>
-          <p className="section-subtitle">Des outils professionnels pour maximiser votre rentabilité</p>
+        <div className="section-header text-center mb-16">
+          <h2 className="text-4xl font-semibold mb-4">Nos Solutions d'Automatisation</h2>
+          <p className="section-subtitle">Technologie de pointe pour votre succès</p>
         </div>
         
-        <div className="services-grid">
-          <div className="service-card-premium">
-            <div className="service-visual">
-              <div className="service-icon-container">
-                <div className="service-icon ai-icon"></div>
-                <div className="service-animation-ring"></div>
-              </div>
+        <div className="services-grid-clean">
+          <div className="service-card-clean">
+            <div className="service-icon-wrapper mb-6">
+              <svg className="service-icon-svg" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
             </div>
+            <h3 className="text-xl font-semibold mb-4">Agent IA Conversationnel</h3>
+            <p className="text-gray-600 mb-6">Intelligence artificielle avancée qui gère vos conversations avec un taux de satisfaction de 96%</p>
             
-            <div className="service-content">
-              <h3>Agent IA Conversationnel</h3>
-              <p>Intelligence artificielle avancée qui gère vos conversations avec un taux de satisfaction de 96%</p>
-              
-              <div className="service-features">
-                <div className="feature-item">
-                  <div className="feature-icon check"></div>
-                  <span>Réponse en moins de 30 secondes</span>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-icon languages"></div>
-                  <span>Support multilingue (FR, EN, ES, IT)</span>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-icon integration"></div>
-                  <span>Intégration native Airbnb & Booking</span>
-                </div>
+            <div className="features-list-clean space-y-3">
+              <div className="feature-item-clean">
+                <div className="feature-check"></div>
+                <span>Réponse en moins de 30 secondes</span>
               </div>
-              
-              <div className="service-pricing">
-                <span className="price-from">À partir de</span>
-                <span className="price-amount">47€</span>
-                <span className="price-period">/mois</span>
+              <div className="feature-item-clean">
+                <div className="feature-check"></div>
+                <span>Support multilingue</span>
+              </div>
+              <div className="feature-item-clean">
+                <div className="feature-check"></div>
+                <span>Intégration native</span>
               </div>
             </div>
           </div>
           
-          <div className="service-card-premium">
-            <div className="service-visual">
-              <div className="service-icon-container">
-                <div className="service-icon booklet-icon"></div>
-                <div className="service-animation-pulse"></div>
-              </div>
+          <div className="service-card-clean">
+            <div className="service-icon-wrapper mb-6">
+              <svg className="service-icon-svg" viewBox="0 0 24 24">
+                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+              </svg>
             </div>
+            <h3 className="text-xl font-semibold mb-4">Livrets d'Accueil</h3>
+            <p className="text-gray-600 mb-6">Guides d'accueil professionnels avec QR Code et mise à jour automatique</p>
             
-            <div className="service-content">
-              <h3>Livrets d'Accueil Digitaux</h3>
-              <p>Créez des guides d'accueil professionnels avec QR Code et mise à jour automatique</p>
-              
-              <div className="service-features">
-                <div className="feature-item">
-                  <div className="feature-icon design"></div>
-                  <span>Design professionnel personnalisable</span>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-icon qr"></div>
-                  <span>QR Code d'accès instantané</span>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-icon update"></div>
-                  <span>Mise à jour en temps réel</span>
-                </div>
+            <div className="features-list-clean space-y-3">
+              <div className="feature-item-clean">
+                <div className="feature-check"></div>
+                <span>Design professionnel</span>
               </div>
-              
-              <div className="service-pricing">
-                <span className="price-from">À partir de</span>
-                <span className="price-amount">27€</span>
-                <span className="price-period">/mois</span>
+              <div className="feature-item-clean">
+                <div className="feature-check"></div>
+                <span>QR Code d'accès</span>
+              </div>
+              <div className="feature-item-clean">
+                <div className="feature-check"></div>
+                <span>Mise à jour temps réel</span>
               </div>
             </div>
           </div>
           
-          <div className="service-card-premium">
-            <div className="service-visual">
-              <div className="service-icon-container">
-                <div className="service-icon formation-icon"></div>
-                <div className="service-animation-rotate"></div>
-              </div>
+          <div className="service-card-clean">
+            <div className="service-icon-wrapper mb-6">
+              <svg className="service-icon-svg" viewBox="0 0 24 24">
+                <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+              </svg>
             </div>
+            <h3 className="text-xl font-semibold mb-4">Formation & Support</h3>
+            <p className="text-gray-600 mb-6">Accompagnement personnalisé pour optimiser vos résultats</p>
             
-            <div className="service-content">
-              <h3>Formation & Accompagnement</h3>
-              <p>Onboarding personnalisé et suivi régulier pour optimiser vos résultats</p>
-              
-              <div className="service-features">
-                <div className="feature-item">
-                  <div className="feature-icon personal"></div>
-                  <span>Formation personnalisée 1-to-1</span>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-icon support"></div>
-                  <span>Support technique prioritaire</span>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-icon analytics"></div>
-                  <span>Analyse de performance mensuelle</span>
-                </div>
+            <div className="features-list-clean space-y-3">
+              <div className="feature-item-clean">
+                <div className="feature-check"></div>
+                <span>Formation personnalisée</span>
               </div>
-              
-              <div className="service-pricing special">
-                <span className="price-included">Inclus dans tous les packs</span>
+              <div className="feature-item-clean">
+                <div className="feature-check"></div>
+                <span>Support prioritaire</span>
               </div>
-            </div>
-          </div>
-          
-          <div className="service-card-premium featured">
-            <div className="featured-badge">Plus populaire</div>
-            <div className="service-visual">
-              <div className="service-icon-container">
-                <div className="service-icon premium-icon"></div>
-                <div className="service-animation-glow"></div>
-              </div>
-            </div>
-            
-            <div className="service-content">
-              <h3>Solution Complète Premium</h3>
-              <p>L'ensemble de nos outils avec analytics avancés et intégrations sur-mesure</p>
-              
-              <div className="service-features">
-                <div className="feature-item">
-                  <div className="feature-icon complete"></div>
-                  <span>Tous les outils inclus</span>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-icon analytics-pro"></div>
-                  <span>Analytics et reporting avancés</span>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-icon priority"></div>
-                  <span>Support prioritaire 24/7</span>
-                </div>
-              </div>
-              
-              <div className="service-pricing premium">
-                <span className="price-from">À partir de</span>
-                <span className="price-amount">97€</span>
-                <span className="price-period">/mois</span>
+              <div className="feature-item-clean">
+                <div className="feature-check"></div>
+                <span>Suivi mensuel</span>
               </div>
             </div>
           </div>

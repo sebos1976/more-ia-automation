@@ -1,46 +1,43 @@
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="footer-pro bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
-          <div>
+        <div className="footer-content grid md:grid-cols-4 gap-8 mb-12">
+          <div className="footer-column">
             <h4 className="text-white font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="#services" className="hover:text-pink-400 transition-colors">Agent IA Conversationnel</a></li>
-              <li><a href="#services" className="hover:text-pink-400 transition-colors">Livrets d'Accueil Digitaux</a></li>
-              <li><a href="#services" className="hover:text-pink-400 transition-colors">Formation & Accompagnement</a></li>
-              <li><a href="#pricing" className="hover:text-pink-400 transition-colors">Tous les Packs</a></li>
+              <li><a href="#services" className="hover:text-pink-400 transition-colors">Automatisation Airbnb</a></li>
+              <li><a href="#services" className="hover:text-pink-400 transition-colors">Formation</a></li>
+              <li><a href="#pricing" className="hover:text-pink-400 transition-colors">Tarifs</a></li>
             </ul>
           </div>
           
-          <div>
+          <div className="footer-column">
             <h4 className="text-white font-semibold mb-4">Ressources</h4>
             <ul className="space-y-2">
               <li><a href="/blog" className="hover:text-pink-400 transition-colors">Blog</a></li>
-              <li><a href="https://youtube.com/sebastienmore" className="hover:text-pink-400 transition-colors">Chaîne YouTube</a></li>
-              <li><a href="/guides" className="hover:text-pink-400 transition-colors">Guides Gratuits</a></li>
-              <li><a href="#testimonials" className="hover:text-pink-400 transition-colors">Témoignages</a></li>
+              <li><a href="https://youtube.com/sebastienmore" className="hover:text-pink-400 transition-colors">YouTube</a></li>
+              <li><a href="/guides" className="hover:text-pink-400 transition-colors">Guides</a></li>
             </ul>
           </div>
           
-          <div>
+          <div className="footer-column">
             <h4 className="text-white font-semibold mb-4">Support</h4>
             <ul className="space-y-2">
-              <li><a href="/contact" className="hover:text-pink-400 transition-colors">Nous Contacter</a></li>
-              <li><a href="#faq" className="hover:text-pink-400 transition-colors">FAQ</a></li>
-              <li><a href="/aide" className="hover:text-pink-400 transition-colors">Centre d'Aide</a></li>
-              <li><a href="/demo" className="hover:text-pink-400 transition-colors">Réserver une Démo</a></li>
+              <li><a href="/contact" className="hover:text-pink-400 transition-colors">Contact</a></li>
+              <li><a href="/faq" className="hover:text-pink-400 transition-colors">FAQ</a></li>
+              <li><a href="/aide" className="hover:text-pink-400 transition-colors">Aide</a></li>
             </ul>
           </div>
           
-          <div>
+          <div className="footer-column">
             <h4 className="text-white font-semibold mb-4">Légal</h4>
             <ul className="space-y-2">
-              <li><a href="/cgv" className="hover:text-pink-400 transition-colors">Conditions Générales</a></li>
+              <li><a href="/cgu" className="hover:text-pink-400 transition-colors">CGU</a></li>
               <li><a href="/mentions-legales" className="hover:text-pink-400 transition-colors">Mentions Légales</a></li>
-              <li><a href="/confidentialite" className="hover:text-pink-400 transition-colors">Politique de Confidentialité</a></li>
-              <li><a href="/cookies" className="hover:text-pink-400 transition-colors">Gestion des Cookies</a></li>
+              <li><a href="/confidentialite" className="hover:text-pink-400 transition-colors">Confidentialité</a></li>
+              <li><a href="/cookies" className="hover:text-pink-400 transition-colors">Cookies</a></li>
             </ul>
           </div>
         </div>
@@ -53,7 +50,7 @@ export const Footer = () => {
               placeholder="Votre adresse email"
               className="flex-1 px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 focus:outline-none focus:border-pink-500"
             />
-            <button className="gradient-btn">S'abonner</button>
+            <button className="btn-gradient-new">S'abonner</button>
           </div>
         </div>
 
