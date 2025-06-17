@@ -1,61 +1,156 @@
 
 export const Services = () => {
-  const services = [
-    {
-      icon: "🤖",
-      title: "Agent IA Conversationnel",
-      description: "Réponses automatiques 24h/24, gestion check-in/check-out, support multilingue",
-      features: ["✓ Réponse en 30 secondes", "✓ Français, anglais, espagnol", "✓ Intégration Airbnb native"],
-      price: "À partir de 47€/mois"
-    },
-    {
-      icon: "📱",
-      title: "Livrets d'Accueil Digitaux",
-      description: "Création automatique, QR Code, mise à jour en temps réel, branding personnalisé",
-      features: ["✓ Design professionnel", "✓ QR Code d'accès", "✓ Mise à jour instantanée"],
-      price: "À partir de 27€/mois"
-    },
-    {
-      icon: "🎓",
-      title: "Formation & Accompagnement",
-      description: "Onboarding personnalisé, formation vidéo, suivi mensuel, support prioritaire",
-      features: ["✓ Formation 1-to-1", "✓ Suivi personnalisé", "✓ Support français"],
-      price: "Inclus dans tous les packs"
-    },
-    {
-      icon: "🚀",
-      title: "Pack Complet Premium",
-      description: "Agent IA + Livrets + Formation + Analytics + Intégrations avancées",
-      features: ["✓ Solution tout-en-un", "✓ Analytics détaillés", "✓ Support premium"],
-      price: "À partir de 97€/mois",
-      featured: true
-    }
-  ];
-
   return (
     <section id="services" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-semibold mb-4">Mes Solutions d'Automatisation</h2>
-          <p className="section-subtitle">Des outils IA sur-mesure pour transformer votre gestion locative</p>
+        <div className="section-header">
+          <div className="section-badge">
+            <div className="badge-icon"></div>
+            <span>Nos Solutions</span>
+          </div>
+          <h2 className="text-4xl font-semibold mb-4">Automatisation Complète de Votre Airbnb</h2>
+          <p className="section-subtitle">Des outils professionnels pour maximiser votre rentabilité</p>
         </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
-            <div key={index} className={`service-card ${service.featured ? 'featured ring-2 ring-pink-500' : ''}`}>
-              <div className="text-4xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-gray-600 mb-4">{service.description}</p>
-              <div className="space-y-2 mb-4">
-                {service.features.map((feature, idx) => (
-                  <div key={idx} className="text-sm text-gray-500">{feature}</div>
-                ))}
-              </div>
-              <div className="text-lg font-semibold" style={{color: 'var(--primary-pink)'}}>
-                {service.price}
+        
+        <div className="services-grid">
+          <div className="service-card-premium">
+            <div className="service-visual">
+              <div className="service-icon-container">
+                <div className="service-icon ai-icon"></div>
+                <div className="service-animation-ring"></div>
               </div>
             </div>
-          ))}
+            
+            <div className="service-content">
+              <h3>Agent IA Conversationnel</h3>
+              <p>Intelligence artificielle avancée qui gère vos conversations avec un taux de satisfaction de 96%</p>
+              
+              <div className="service-features">
+                <div className="feature-item">
+                  <div className="feature-icon check"></div>
+                  <span>Réponse en moins de 30 secondes</span>
+                </div>
+                <div className="feature-item">
+                  <div className="feature-icon languages"></div>
+                  <span>Support multilingue (FR, EN, ES, IT)</span>
+                </div>
+                <div className="feature-item">
+                  <div className="feature-icon integration"></div>
+                  <span>Intégration native Airbnb & Booking</span>
+                </div>
+              </div>
+              
+              <div className="service-pricing">
+                <span className="price-from">À partir de</span>
+                <span className="price-amount">47€</span>
+                <span className="price-period">/mois</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="service-card-premium">
+            <div className="service-visual">
+              <div className="service-icon-container">
+                <div className="service-icon booklet-icon"></div>
+                <div className="service-animation-pulse"></div>
+              </div>
+            </div>
+            
+            <div className="service-content">
+              <h3>Livrets d'Accueil Digitaux</h3>
+              <p>Créez des guides d'accueil professionnels avec QR Code et mise à jour automatique</p>
+              
+              <div className="service-features">
+                <div className="feature-item">
+                  <div className="feature-icon design"></div>
+                  <span>Design professionnel personnalisable</span>
+                </div>
+                <div className="feature-item">
+                  <div className="feature-icon qr"></div>
+                  <span>QR Code d'accès instantané</span>
+                </div>
+                <div className="feature-item">
+                  <div className="feature-icon update"></div>
+                  <span>Mise à jour en temps réel</span>
+                </div>
+              </div>
+              
+              <div className="service-pricing">
+                <span className="price-from">À partir de</span>
+                <span className="price-amount">27€</span>
+                <span className="price-period">/mois</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="service-card-premium">
+            <div className="service-visual">
+              <div className="service-icon-container">
+                <div className="service-icon formation-icon"></div>
+                <div className="service-animation-rotate"></div>
+              </div>
+            </div>
+            
+            <div className="service-content">
+              <h3>Formation & Accompagnement</h3>
+              <p>Onboarding personnalisé et suivi régulier pour optimiser vos résultats</p>
+              
+              <div className="service-features">
+                <div className="feature-item">
+                  <div className="feature-icon personal"></div>
+                  <span>Formation personnalisée 1-to-1</span>
+                </div>
+                <div className="feature-item">
+                  <div className="feature-icon support"></div>
+                  <span>Support technique prioritaire</span>
+                </div>
+                <div className="feature-item">
+                  <div className="feature-icon analytics"></div>
+                  <span>Analyse de performance mensuelle</span>
+                </div>
+              </div>
+              
+              <div className="service-pricing special">
+                <span className="price-included">Inclus dans tous les packs</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="service-card-premium featured">
+            <div className="featured-badge">Plus populaire</div>
+            <div className="service-visual">
+              <div className="service-icon-container">
+                <div className="service-icon premium-icon"></div>
+                <div className="service-animation-glow"></div>
+              </div>
+            </div>
+            
+            <div className="service-content">
+              <h3>Solution Complète Premium</h3>
+              <p>L'ensemble de nos outils avec analytics avancés et intégrations sur-mesure</p>
+              
+              <div className="service-features">
+                <div className="feature-item">
+                  <div className="feature-icon complete"></div>
+                  <span>Tous les outils inclus</span>
+                </div>
+                <div className="feature-item">
+                  <div className="feature-icon analytics-pro"></div>
+                  <span>Analytics et reporting avancés</span>
+                </div>
+                <div className="feature-item">
+                  <div className="feature-icon priority"></div>
+                  <span>Support prioritaire 24/7</span>
+                </div>
+              </div>
+              
+              <div className="service-pricing premium">
+                <span className="price-from">À partir de</span>
+                <span className="price-amount">97€</span>
+                <span className="price-period">/mois</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

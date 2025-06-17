@@ -1,62 +1,120 @@
 
 export const Hero = () => {
   return (
-    <section id="accueil" className="hero py-20">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="hero-content">
-            <h1 className="text-4xl lg:text-6xl font-semibold mb-6 leading-tight">
-              Automatisez Votre Airbnb avec l'Intelligence Artificielle
-            </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              Agent IA conversationnel + Livrets d'accueil digitaux = 90% de temps économisé
-            </p>
-            
-            <div className="bg-white rounded-2xl p-6 shadow-lg mb-8">
-              <div className="grid md:grid-cols-4 gap-4">
-                <input 
-                  type="text" 
-                  placeholder="Type de service" 
-                  className="px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
-                />
-                <input 
-                  type="text" 
-                  placeholder="Nombre de logements" 
-                  className="px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
-                />
-                <input 
-                  type="text" 
-                  placeholder="Budget mensuel" 
-                  className="px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
-                />
-                <button className="gradient-btn">OBTENIR MA DÉMO GRATUITE</button>
+    <section id="accueil" className="hero">
+      <div className="hero-container">
+        <div className="hero-content">
+          <div className="hero-badge">
+            <div className="badge-icon"></div>
+            <span>Expert IA certifié</span>
+          </div>
+          
+          <h1 className="hero-title">
+            Automatisez Votre Airbnb avec <span className="gradient-text">l'Intelligence Artificielle</span>
+          </h1>
+          
+          <p className="hero-subtitle">
+            Agent IA conversationnel + Livrets d'accueil digitaux = 90% de temps économisé
+          </p>
+          
+          <div className="hero-search-widget">
+            <div className="search-input-group">
+              <div className="input-wrapper">
+                <select className="search-input">
+                  <option>Type de service</option>
+                  <option>Agent IA seul</option>
+                  <option>Livrets d'accueil</option>
+                  <option>Solution complète</option>
+                </select>
+              </div>
+              
+              <div className="input-wrapper">
+                <select className="search-input">
+                  <option>Nombre de logements</option>
+                  <option>1-3 logements</option>
+                  <option>4-10 logements</option>
+                  <option>+10 logements</option>
+                </select>
+              </div>
+              
+              <div className="input-wrapper">
+                <select className="search-input">
+                  <option>Budget mensuel</option>
+                  <option>50-100€</option>
+                  <option>100-200€</option>
+                  <option>+200€</option>
+                </select>
+              </div>
+              
+              <button className="search-btn-gradient">
+                <span>Obtenir ma démo gratuite</span>
+              </button>
+            </div>
+          </div>
+          
+          <div className="hero-stats-widget">
+            <div className="stat-card">
+              <div className="stat-icon-gradient stat-users"></div>
+              <div className="stat-content">
+                <div className="stat-number">200+</div>
+                <div className="stat-label">Propriétaires accompagnés</div>
               </div>
             </div>
-
-            <div className="grid grid-cols-3 gap-8 text-center">
-              <div className="stat">
-                <div className="text-3xl font-bold text-gray-900 mb-1">200+</div>
-                <div className="text-gray-600">Propriétaires accompagnés</div>
+            
+            <div className="stat-card">
+              <div className="stat-icon-gradient stat-time"></div>
+              <div className="stat-content">
+                <div className="stat-number">90%</div>
+                <div className="stat-label">De temps économisé</div>
               </div>
-              <div className="stat">
-                <div className="text-3xl font-bold text-gray-900 mb-1">90%</div>
-                <div className="text-gray-600">De temps économisé</div>
-              </div>
-              <div className="stat">
-                <div className="text-3xl font-bold text-gray-900 mb-1">24/7</div>
-                <div className="text-gray-600">Disponibilité</div>
+            </div>
+            
+            <div className="stat-card">
+              <div className="stat-icon-gradient stat-support"></div>
+              <div className="stat-content">
+                <div className="stat-number">24/7</div>
+                <div className="stat-label">Disponibilité</div>
               </div>
             </div>
           </div>
-
-          <div className="hero-image">
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
-                alt="Dashboard IA pour Airbnb" 
-                className="rounded-2xl shadow-2xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-tr from-pink-500/20 to-transparent rounded-2xl"></div>
+        </div>
+        
+        <div className="hero-visual">
+          <div className="dashboard-mockup">
+            <div className="mockup-header">
+              <div className="mockup-dots">
+                <span className="dot red"></span>
+                <span className="dot yellow"></span>
+                <span className="dot green"></span>
+              </div>
+              <div className="mockup-title">Dashboard IA - Sébastien More</div>
+            </div>
+            
+            <div className="mockup-content">
+              <div className="chat-widget">
+                <div className="chat-header">
+                  <div className="chat-avatar"></div>
+                  <div className="chat-info">
+                    <div className="chat-name">Agent IA - Villa Cannes</div>
+                    <div className="chat-status">En ligne • Répond en 30s</div>
+                  </div>
+                </div>
+                
+                <div className="chat-messages">
+                  <div className="message guest">
+                    <div>
+                      <div className="message-bubble">À quelle heure est le check-in ?</div>
+                      <div className="message-time">14:32</div>
+                    </div>
+                  </div>
+                  <div className="message ai">
+                    <div>
+                      <div className="message-bubble">Le check-in est à partir de 16h. Je vous enverrai le code d'accès 1h avant votre arrivée 😊</div>
+                      <div className="message-time">14:32</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
