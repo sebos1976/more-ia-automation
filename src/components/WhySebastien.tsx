@@ -6,19 +6,11 @@ export const WhySebastien = () => {
         <div className="about-container grid lg:grid-cols-2 gap-12 items-center">
           <div className="about-image-section">
             <div className="image-wrapper-pro relative">
-              <div className="image-placeholder bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl p-8 text-center text-white relative overflow-hidden">
-                <div className="image-decoration-1 absolute top-4 right-4 w-12 h-12 bg-white/20 rounded-full"></div>
-                <div className="image-decoration-2 absolute bottom-4 left-4 w-8 h-8 bg-white/30 rounded-full"></div>
-                <div className="image-glow-effect absolute inset-0 bg-gradient-to-br from-transparent to-white/10"></div>
-                <div className="relative z-10 py-12">
-                  <div className="w-24 h-24 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 7.5V9M21 17V15L15 15.5V17M11 19C11 20.1 11.9 21 13 21S15 20.1 15 19 14.1 17 13 17 11 17.9 11 19M7 7V9L1 8.5V7M7 15V17L1 16.5V15M11 5C11 6.1 11.9 7 13 7S15 6.1 15 5 14.1 3 13 3 11 3.9 11 5Z"/>
-                    </svg>
-                  </div>
-                  <span className="text-lg font-semibold">Photo de Sébastien à venir</span>
-                </div>
-              </div>
+              <img 
+                src="/lovable-uploads/4cc0635b-b222-4e20-9151-e2459d24e6ae.png" 
+                alt="Sébastien More - Expert en automatisation Airbnb"
+                className="w-full h-auto rounded-2xl shadow-2xl"
+              />
             </div>
           </div>
           
