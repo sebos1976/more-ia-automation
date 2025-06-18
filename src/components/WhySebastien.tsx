@@ -16,8 +16,8 @@ export const WhySebastien = () => {
           
           <div className="about-content-section">
             <div className="about-header mb-8">
-              <h2 className="text-4xl font-semibold mb-4">Pourquoi choisir Sébastien More ?</h2>
-              <p className="about-subtitle text-gray-600 text-lg">Expert en automatisation Airbnb depuis 3 ans</p>
+              <h2 className="text-4xl font-semibold mb-4">Pourquoi choisir Helphoster ?</h2>
+              <p className="about-subtitle text-gray-600 text-lg">Créé par Sébastien More, expert en automatisation Airbnb</p>
             </div>
             
             <div className="expertise-grid space-y-6">
@@ -29,7 +29,7 @@ export const WhySebastien = () => {
                 </div>
                 <div className="expertise-text">
                   <div className="font-semibold text-lg text-gray-900">200+ propriétaires accompagnés</div>
-                  <div className="text-gray-600">avec 98% de satisfaction</div>
+                  <div className="text-gray-600">avec 98% de satisfaction client</div>
                 </div>
               </div>
               
@@ -40,8 +40,8 @@ export const WhySebastien = () => {
                   </svg>
                 </div>
                 <div className="expertise-text">
-                  <div className="font-semibold text-lg text-gray-900">Chaîne YouTube 15K+ abonnés</div>
-                  <div className="text-gray-600">référence française IA pour Airbnb</div>
+                  <div className="font-semibold text-lg text-gray-900">Chaîne YouTube + de 41 000 abonnés</div>
+                  <div className="text-gray-600">spécialiste IA pour l'automatisation Airbnb</div>
                 </div>
               </div>
               
@@ -52,15 +52,17 @@ export const WhySebastien = () => {
                   </svg>
                 </div>
                 <div className="expertise-text">
-                  <div className="font-semibold text-lg text-gray-900">Expert certifié Eleven Labs</div>
-                  <div className="text-gray-600">maîtrise des technologies IA</div>
+                  <div className="font-semibold text-lg text-gray-900">Expert en automatisation Airbnb avec l'IA</div>
+                  <div className="text-gray-600">3 ans d'expérience spécialisée</div>
                 </div>
               </div>
             </div>
             
             <div className="cta-buttons-pro mt-8 flex gap-4">
               <button className="btn-gradient-new">Réserver un appel découverte</button>
-              <button className="btn-outline-new">Voir mon parcours</button>
+              <a href="https://www.youtube.com/@moresebastien" target="_blank" className="btn-outline-new">
+                Voir ma chaîne YouTube
+              </a>
             </div>
           </div>
         </div>

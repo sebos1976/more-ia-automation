@@ -6,28 +6,40 @@ export const FAQ = () => {
 
   const faqs = [
     {
-      question: "Comment l'agent IA apprend-il mon style de communication ?",
-      answer: "L'IA analyse vos conversations passées et vos réponses habituelles pour reproduire votre ton naturel. Je configure personnellement chaque agent lors de l'onboarding pour qu'il reflète parfaitement votre personnalité."
+      question: "Qu'est-ce que Helphoster ?",
+      answer: "Helphoster est votre copilote IA pour automatiser la gestion de vos locations Airbnb. Notre IA co-host répond automatiquement à vos voyageurs 24h/24 et simplifie votre quotidien."
     },
     {
-      question: "Les livrets d'accueil sont-ils vraiment personnalisables ?",
-      answer: "Absolument ! Chaque livret est 100% personnalisable : couleurs, logo, contenus, recommandations locales. Vous gardez le contrôle total sur l'image de marque de vos locations."
+      question: "À qui s'adresse Helphoster ?",
+      answer: "Propriétaires de locations Airbnb ou conciergeries souhaitant optimiser la gestion de leurs logements. Que vous gériez un bien ou plusieurs, notre IA s'adapte à vos besoins."
     },
     {
-      question: "Quelles plateformes de réservation sont supportées ?",
-      answer: "Airbnb et Booking.com en natif, plus tous les principaux PMS (Beds24, Smoobu, Lodgify, etc.) via API. Si vous utilisez un autre système, contactez-moi pour étudier l'intégration."
+      question: "Comment l'IA co-host m'aide-t-elle ?",
+      answer: "Elle répond automatiquement à plus de 90 % des messages de vos voyageurs, gère les situations imprévues, et améliore l'expérience client. Résultat : moins de stress, plus de temps libre, plus de 5 étoiles."
     },
     {
-      question: "Que se passe-t-il si l'IA ne peut pas répondre à une question ?",
-      answer: "L'agent IA est configuré pour vous transférer automatiquement les conversations complexes. Vous recevez une notification immédiate et pouvez prendre la main quand nécessaire."
+      question: "Comment fonctionne l'IA co-host de Helphoster ?",
+      answer: "L'IA se connecte à votre compte Airbnb (et bientôt Booking, Abritel…) et répond instantanément aux messages, en tenant compte du contexte et de votre annonce."
     },
     {
-      question: "Y a-t-il un engagement de durée ?",
-      answer: "Les packs Découverte et Croissance ont un engagement de 3 mois. Le pack Professionnel peut être annuel pour bénéficier de réductions. Le pack Entreprise est sur mesure."
+      question: "Ai-je besoin d'un logiciel ou PMS pour utiliser Helphoster ?",
+      answer: "Non, Helphoster fonctionne directement avec Airbnb. Pour d'autres plateformes (Booking, Abritel), un PMS (Beds24, Smoobu, Lodgify) est recommandé."
     },
     {
-      question: "Puis-je tester avant de m'engager ?",
-      answer: "Oui ! Je propose une démonstration gratuite de 30 minutes où vous pourrez voir l'agent IA en action sur vos propres données. De plus, tous les packs incluent une garantie de 30 jours."
+      question: "Mes voyageurs ont-ils besoin de télécharger une app ?",
+      answer: "Non, tout se fait en ligne. Les voyageurs n'ont rien à installer."
+    },
+    {
+      question: "Puis-je essayer le service gratuitement ?",
+      answer: "Oui, nous proposons une période d'essai gratuite pour vous permettre de tester l'IA co-host sur votre annonce."
+    },
+    {
+      question: "Comment me désinscrire de Helphoster ?",
+      answer: "Simplement en envoyant une demande par email à : moresebastien@gmail.com"
+    },
+    {
+      question: "Sur quelles zones géographiques opère Helphoster ?",
+      answer: "Notre IA fonctionne avec tous les comptes Airbnb, en France comme à l'international."
     }
   ];
 
@@ -36,6 +48,7 @@ export const FAQ = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-semibold mb-4">Questions Fréquemment Posées</h2>
+          <p className="section-subtitle">Tout ce que vous devez savoir sur Helphoster</p>
         </div>
 
         <div className="max-w-3xl mx-auto">
@@ -52,7 +65,7 @@ export const FAQ = () => {
               </button>
               {openIndex === index && (
                 <div className="accordion-content">
-                  <p className="text-gray-600">{faq.answer}</p>
+                  <p className="text-gray-600" dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
                 </div>
               )}
             </div>

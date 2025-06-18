@@ -8,6 +8,7 @@ import { Pricing } from "@/components/Pricing";
 import { Testimonials } from "@/components/Testimonials";
 import { WhySebastien } from "@/components/WhySebastien";
 import { FAQ } from "@/components/FAQ";
+import { YouTubeSection } from "@/components/YouTubeSection";
 import { Integrations } from "@/components/Integrations";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
@@ -24,6 +25,7 @@ const Index = () => {
       <Testimonials />
       <WhySebastien />
       <FAQ />
+      <YouTubeSection />
       <Integrations />
       <FinalCTA />
       <Footer />

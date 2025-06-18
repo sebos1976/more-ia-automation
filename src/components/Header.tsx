@@ -12,7 +12,7 @@ export const Header = () => {
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500"></div>
               <div className="text-2xl font-bold text-gray-900">
-                Sébastien More
+                Helphoster
               </div>
             </div>
             <nav className="hidden lg:flex space-x-8">

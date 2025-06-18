@@ -6,7 +6,7 @@ export const Hero = () => {
         <div className="hero-content">
           <div className="hero-badge">
             <div className="badge-icon"></div>
-            <span>Expert IA certifié</span>
+            <span>Expert en automatisation Airbnb</span>
           </div>
           
           <h1 className="hero-title">
@@ -14,7 +14,7 @@ export const Hero = () => {
           </h1>
           
           <p className="hero-subtitle">
-            Agent IA conversationnel + Livrets d'accueil digitaux = 90% de temps économisé
+            Agent IA conversationnel = 90% de temps économisé dans la gestion de vos locations
           </p>
           
           <div className="hero-search-widget">
@@ -23,7 +23,7 @@ export const Hero = () => {
                 <select className="search-input">
                   <option>Type de service</option>
                   <option>Agent IA seul</option>
-                  <option>Livrets d'accueil</option>
+                  <option>Gestion automatisée</option>
                   <option>Solution complète</option>
                 </select>
               </div>
@@ -78,7 +78,7 @@ export const Hero = () => {
                 <span className="dot yellow"></span>
                 <span className="dot green"></span>
               </div>
-              <div className="mockup-title">Dashboard IA - Sébastien More</div>
+              <div className="mockup-title">Dashboard IA - Helphoster</div>
             </div>
             
             <div className="mockup-content">
