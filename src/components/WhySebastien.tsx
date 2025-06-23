@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { DemoForm } from "./DemoForm";
 
@@ -94,16 +93,18 @@ export const WhySebastien = () => {
       {/* Demo Form Modal */}
       <DemoForm isOpen={showDemoForm} onClose={() => setShowDemoForm(false)} />
 
-      <style jsx>{`
-        @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-10px); }
-        }
-        
-        .animate-float {
-          animation: float 3s ease-in-out infinite;
-        }
-      `}</style>
+      <style>
+        {`
+          @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+          }
+          
+          .animate-float {
+            animation: float 3s ease-in-out infinite;
+          }
+        `}
+      </style>
     </>
   );
 };
