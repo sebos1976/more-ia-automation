@@ -64,15 +64,13 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
     setIsSubmitting(true);
 
     try {
-      // Créer l'objet avec le nom complet (prénom + nom)
-      const fullName = `${formData.prenom.trim()} ${formData.nom.trim()}`;
-      
       const { error } = await supabase
-        .from('HELPHOSTER')
+        .from('helphoster_demo')
         .insert([{
-          nom: fullName,
+          prenom: formData.prenom.trim(),
+          nom: formData.nom.trim(),
           email: formData.email.trim(),
-          Téléphone: formData.telephone.trim()
+          telephone: formData.telephone.trim()
         }]);
 
       if (error) {
