@@ -18,12 +18,12 @@ export const Header = () => {
     <header className="w-full bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <nav className="flex items-center justify-between py-4">
-          {/* Logo - GARDER LA TAILLE ACTUELLE */}
+          {/* Logo - TAILLE RÉDUITE */}
           <div className="flex-shrink-0">
             <img 
               src="/lovable-uploads/1620c0b2-8206-4754-b216-9da3eb16227f.png" 
               alt="Helphoster" 
-              className="h-32 w-auto"
+              className="h-8 w-auto"
             />
           </div>
           
