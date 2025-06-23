@@ -28,9 +28,9 @@ export const Hero = () => {
           <div className="mt-8">
             <button 
               onClick={() => setIsContactFormOpen(true)}
-              className="search-btn-gradient"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl text-xl font-semibold min-w-[320px] min-h-[64px] hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
-              <span>Obtenir une démonstration gratuite</span>
+              Obtenir une démonstration gratuite
             </button>
           </div>
           

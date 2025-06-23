@@ -69,66 +69,6 @@ export type Database = {
         }
         Relationships: []
       }
-      "HELPHOSTER  DEMO": {
-        Row: {
-          besoin_principal: string | null
-          created_at: string
-          email: string | null
-          entreprise_secteur: string | null
-          id: number
-          nom: string | null
-          Téléphone: string | null
-        }
-        Insert: {
-          besoin_principal?: string | null
-          created_at?: string
-          email?: string | null
-          entreprise_secteur?: string | null
-          id?: number
-          nom?: string | null
-          Téléphone?: string | null
-        }
-        Update: {
-          besoin_principal?: string | null
-          created_at?: string
-          email?: string | null
-          entreprise_secteur?: string | null
-          id?: number
-          nom?: string | null
-          Téléphone?: string | null
-        }
-        Relationships: []
-      }
-      "HELPHOSTER  DEVIS": {
-        Row: {
-          besoin_principal: string | null
-          created_at: string
-          email: string | null
-          entreprise_secteur: string | null
-          id: number
-          nom: string | null
-          Téléphone: string | null
-        }
-        Insert: {
-          besoin_principal?: string | null
-          created_at?: string
-          email?: string | null
-          entreprise_secteur?: string | null
-          id?: number
-          nom?: string | null
-          Téléphone?: string | null
-        }
-        Update: {
-          besoin_principal?: string | null
-          created_at?: string
-          email?: string | null
-          entreprise_secteur?: string | null
-          id?: number
-          nom?: string | null
-          Téléphone?: string | null
-        }
-        Relationships: []
-      }
       helphoster_demo: {
         Row: {
           created_at: string | null
