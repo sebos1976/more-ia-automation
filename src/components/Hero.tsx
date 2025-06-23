@@ -64,11 +64,13 @@ export const Hero = () => {
             </div>
             
             <div className="mockup-content">
-              <img 
-                src="/lovable-uploads/d59cd207-1942-4c0b-8905-81419458fcd6.png" 
-                alt="Interface IA Helphoster" 
-                className="w-full h-auto object-contain rounded-lg"
-              />
+              <div className="flex-1 relative max-w-xl mx-auto">
+                <img 
+                  src="/lovable-uploads/d59cd207-1942-4c0b-8905-81419458fcd6.png" 
+                  alt="Interface IA Helphoster" 
+                  className="w-full h-auto object-contain rounded-lg shadow-2xl"
+                />
+              </div>
             </div>
           </div>
         </div>
