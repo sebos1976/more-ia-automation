@@ -59,7 +59,7 @@ export const WhySebastien = () => {
             </div>
             
             <div className="cta-buttons-pro mt-8 flex gap-4">
-              <button className="btn-gradient-new">Réserver un appel découverte</button>
+              <button className="btn-gradient-new">Obtenir une démo</button>
               <a href="https://www.youtube.com/@moresebastien" target="_blank" className="btn-outline-new">
                 Voir ma chaîne YouTube
               </a>
