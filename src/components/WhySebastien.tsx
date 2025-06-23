@@ -6,11 +6,20 @@ export const WhySebastien = () => {
         <div className="about-container grid lg:grid-cols-2 gap-12 items-center">
           <div className="about-image-section">
             <div className="image-wrapper-pro relative">
-              <img 
-                src="/lovable-uploads/87683e11-cab8-47a2-bc64-df6f1caafd2d.png" 
-                alt="Sébastien More - Expert en automatisation Airbnb"
-                className="w-full h-auto rounded-2xl shadow-2xl"
-              />
+              {/* Animated border wrapper */}
+              <div className="relative p-1 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-violet-600 animate-pulse">
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-violet-600 opacity-75 blur-sm animate-pulse"></div>
+                <div className="relative bg-white rounded-3xl p-2">
+                  <img 
+                    src="/lovable-uploads/87683e11-cab8-47a2-bc64-df6f1caafd2d.png" 
+                    alt="Sébastien More - Expert en automatisation Airbnb"
+                    className="w-full h-auto rounded-2xl shadow-2xl relative z-10"
+                  />
+                </div>
+              </div>
+              
+              {/* Animated glow effect */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-pink-400 via-purple-400 to-violet-500 opacity-20 blur-xl animate-pulse"></div>
             </div>
           </div>
           
