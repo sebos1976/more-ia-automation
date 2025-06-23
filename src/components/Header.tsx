@@ -15,53 +15,57 @@ export const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-2">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-6">
-            <div className="flex items-center">
-              <img 
-                src="/lovable-uploads/1620c0b2-8206-4754-b216-9da3eb16227f.png" 
-                alt="Helphoster" 
-                className="h-32 w-auto"
-              />
-            </div>
-            <nav className="hidden lg:flex space-x-6">
-              <a href="#accueil" className="text-gray-700 hover:text-pink-500 transition-colors font-medium text-sm">Accueil</a>
-              <a href="#services" className="text-gray-700 hover:text-pink-500 transition-colors font-medium text-sm">Services</a>
-              <a href="#tarifs" className="text-gray-700 hover:text-pink-500 transition-colors font-medium text-sm">Tarifs</a>
-              <a href="https://blog.helphoster.com" target="_blank" className="text-gray-700 hover:text-pink-500 transition-colors font-medium text-sm">Blog</a>
-              <a href="mailto:contact@helphoster.com" className="text-gray-700 hover:text-pink-500 transition-colors font-medium text-sm">Contact</a>
-            </nav>
+    <header className="w-full bg-white shadow-sm sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <nav className="flex items-center justify-between py-4">
+          {/* Logo - GARDER LA TAILLE ACTUELLE */}
+          <div className="flex-shrink-0">
+            <img 
+              src="/lovable-uploads/1620c0b2-8206-4754-b216-9da3eb16227f.png" 
+              alt="Helphoster" 
+              className="h-32 w-auto"
+            />
           </div>
           
-          <div className="hidden lg:flex items-center space-x-3">
-            <button onClick={handleLogin} className="btn-secondary text-sm px-3 py-1.5">Se connecter</button>
-            <button onClick={handleGetStarted} className="btn-gradient text-sm px-3 py-1.5">Commencer</button>
+          {/* Navigation Desktop */}
+          <div className="hidden md:flex items-center space-x-6">
+            <a href="#accueil" className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-sm">Accueil</a>
+            <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-sm">Services</a>
+            <a href="#tarifs" className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-sm">Tarifs</a>
+            <a href="https://blog.helphoster.com" target="_blank" className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-sm">Blog</a>
+            <a href="mailto:contact@helphoster.com" className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-sm">Contact</a>
+          </div>
+          
+          {/* Boutons CTA Desktop */}
+          <div className="hidden md:flex items-center space-x-4">
+            <button onClick={handleLogin} className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-sm">Se connecter</button>
+            <button onClick={handleGetStarted} className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm">Commencer</button>
           </div>
 
+          {/* Menu Mobile */}
           <button 
-            className="lg:hidden"
+            className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
-        </div>
+        </nav>
 
+        {/* Menu Mobile Déroulant */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4">
+          <div className="md:hidden pb-4">
             <nav className="flex flex-col space-y-4">
-              <a href="#accueil" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Accueil</a>
-              <a href="#services" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Services</a>
-              <a href="#tarifs" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Tarifs</a>
-              <a href="https://blog.helphoster.com" target="_blank" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Blog</a>
-              <a href="mailto:contact@helphoster.com" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Contact</a>
+              <a href="#accueil" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Accueil</a>
+              <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</a>
+              <a href="#tarifs" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Tarifs</a>
+              <a href="https://blog.helphoster.com" target="_blank" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Blog</a>
+              <a href="mailto:contact@helphoster.com" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
             </nav>
             <div className="flex flex-col space-y-3 mt-4">
-              <button onClick={handleLogin} className="btn-secondary">Se connecter</button>
-              <button onClick={handleGetStarted} className="btn-gradient">Commencer</button>
+              <button onClick={handleLogin} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Se connecter</button>
+              <button onClick={handleGetStarted} className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium">Commencer</button>
             </div>
           </div>
         )}
