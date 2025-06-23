@@ -21,9 +21,9 @@ export const Header = () => {
           <div className="flex items-center space-x-8">
             <div className="flex items-center">
               <img 
-                src="/lovable-uploads/74bcdb43-2125-4bfb-b428-5d7c8c1be384.png" 
+                src="/lovable-uploads/1620c0b2-8206-4754-b216-9da3eb16227f.png" 
                 alt="Helphoster" 
-                className="w-24 h-24"
+                className="h-12 w-auto"
               />
             </div>
             <nav className="hidden lg:flex space-x-8">
