@@ -7,7 +7,7 @@ export const PartnersLogos = () => {
         <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl p-[2px]">
           <div className="bg-white rounded-3xl p-6 flex items-center justify-center gap-8">
             <img 
-              src="/lovable-uploads/955619de-e2dc-44e8-ad93-2b9242f2990f.png" 
+              src="/lovable-uploads/4e0587fd-75f8-4176-a381-d1dee114f444.png" 
               alt="Booking.com et Airbnb" 
               className="w-64 h-auto object-contain"
             />
