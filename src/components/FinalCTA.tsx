@@ -1,9 +1,11 @@
 
 import { useState } from "react";
-import { ContactForm } from "./ContactForm";
+import { DemoForm } from "./DemoForm";
+import { DevisForm } from "./DevisForm";
 
 export const FinalCTA = () => {
-  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
+  const [isDemoFormOpen, setIsDemoFormOpen] = useState(false);
+  const [isDevisFormOpen, setIsDevisFormOpen] = useState(false);
 
   return (
     <section className="py-20" style={{background: 'var(--gradient-hero)'}}>
@@ -14,16 +16,16 @@ export const FinalCTA = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <button 
-              onClick={() => setIsContactFormOpen(true)}
+              onClick={() => setIsDemoFormOpen(true)}
               className="bg-white text-gray-900 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors"
             >
               Obtenir une démonstration gratuite
             </button>
             <button 
-              onClick={() => setIsContactFormOpen(true)}
+              onClick={() => setIsDevisFormOpen(true)}
               className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-gray-900 transition-colors"
             >
-              Poser une question
+              Demander un devis
             </button>
           </div>
 
@@ -44,9 +46,13 @@ export const FinalCTA = () => {
         </div>
       </div>
 
-      <ContactForm 
-        isOpen={isContactFormOpen}
-        onClose={() => setIsContactFormOpen(false)}
+      <DemoForm 
+        isOpen={isDemoFormOpen}
+        onClose={() => setIsDemoFormOpen(false)}
+      />
+      <DevisForm 
+        isOpen={isDevisFormOpen}
+        onClose={() => setIsDevisFormOpen(false)}
       />
     </section>
   );

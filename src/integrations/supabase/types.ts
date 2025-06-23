@@ -39,6 +39,36 @@ export type Database = {
         }
         Relationships: []
       }
+      devis: {
+        Row: {
+          created_at: string | null
+          email: string | null
+          id: number
+          nom: string | null
+          nombre_logements: number | null
+          prenom: string | null
+          projet: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          email?: string | null
+          id?: number
+          nom?: string | null
+          nombre_logements?: number | null
+          prenom?: string | null
+          projet?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          email?: string | null
+          id?: number
+          nom?: string | null
+          nombre_logements?: number | null
+          prenom?: string | null
+          projet?: string | null
+        }
+        Relationships: []
+      }
       "HELPHOSTER  DEMO": {
         Row: {
           besoin_principal: string | null
@@ -96,6 +126,33 @@ export type Database = {
           id?: number
           nom?: string | null
           Téléphone?: string | null
+        }
+        Relationships: []
+      }
+      helphoster_demo: {
+        Row: {
+          created_at: string | null
+          email: string | null
+          id: number
+          nom: string | null
+          prenom: string | null
+          telephone: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          email?: string | null
+          id?: number
+          nom?: string | null
+          prenom?: string | null
+          telephone?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          email?: string | null
+          id?: number
+          nom?: string | null
+          prenom?: string | null
+          telephone?: string | null
         }
         Relationships: []
       }

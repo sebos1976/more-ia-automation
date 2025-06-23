@@ -10,8 +10,8 @@ export const Header = () => {
   };
 
   const handleGetStarted = () => {
-    // Redirection vers Bubble (à configurer avec Lloyd)
-    window.open('https://helphoster.bubbleapps.io/signup', '_blank');
+    // Redirection vers la nouvelle URL
+    window.open('https://app.helphoster.com/', '_blank');
   };
 
   return (
