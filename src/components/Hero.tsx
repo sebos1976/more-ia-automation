@@ -64,30 +64,11 @@ export const Hero = () => {
             </div>
             
             <div className="mockup-content">
-              <div className="chat-widget">
-                <div className="chat-header">
-                  <div className="chat-avatar"></div>
-                  <div className="chat-info">
-                    <div className="chat-name">Agent IA - Villa Cannes</div>
-                    <div className="chat-status">En ligne • Répond en 30s</div>
-                  </div>
-                </div>
-                
-                <div className="chat-messages">
-                  <div className="message guest">
-                    <div>
-                      <div className="message-bubble">À quelle heure est le check-in ?</div>
-                      <div className="message-time">14:32</div>
-                    </div>
-                  </div>
-                  <div className="message ai">
-                    <div>
-                      <div className="message-bubble">Le check-in est à partir de 16h. Je vous enverrai le code d'accès 1h avant votre arrivée</div>
-                      <div className="message-time">14:32</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img 
+                src="/lovable-uploads/d59cd207-1942-4c0b-8905-81419458fcd6.png" 
+                alt="Interface IA Helphoster" 
+                className="w-full h-auto object-contain rounded-lg"
+              />
             </div>
           </div>
         </div>
