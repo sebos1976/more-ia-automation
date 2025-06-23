@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/lib/supabase";
 
 interface FormData {
   prenom: string;
@@ -63,9 +64,19 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
     setIsSubmitting(true);
 
     try {
-      // TODO: Intégration Supabase à ajouter après activation
-      // Pour l'instant, simulation d'envoi
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const { error } = await supabase
+        .from('demandes_demonstration')
+        .insert([{
+          prenom: formData.prenom.trim(),
+          nom: formData.nom.trim(),
+          email: formData.email.trim(),
+          telephone: formData.telephone.trim()
+        }]);
+
+      if (error) {
+        console.error('Erreur Supabase:', error);
+        throw error;
+      }
       
       toast({
         title: "Merci !",
@@ -82,6 +93,7 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
       
       onClose();
     } catch (error) {
+      console.error('Erreur lors de l\'envoi:', error);
       toast({
         title: "Erreur",
         description: "Une erreur est survenue. Veuillez réessayer.",
