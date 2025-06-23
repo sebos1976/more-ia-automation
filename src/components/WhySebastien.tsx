@@ -7,7 +7,7 @@ export const WhySebastien = () => {
           <div className="about-image-section">
             <div className="image-wrapper-pro relative">
               <img 
-                src="/lovable-uploads/4cc0635b-b222-4e20-9151-e2459d24e6ae.png" 
+                src="/lovable-uploads/87683e11-cab8-47a2-bc64-df6f1caafd2d.png" 
                 alt="Sébastien More - Expert en automatisation Airbnb"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
