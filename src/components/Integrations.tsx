@@ -4,12 +4,12 @@ export const Integrations = () => {
     { 
       name: "Airbnb", 
       logo: "/lovable-uploads/46595110-a9ea-45fa-926a-cadb2f047f32.png",
-      description: "Intégration native"
+      description: "Plateforme de location"
     },
     { 
       name: "Booking.com", 
       logo: "/lovable-uploads/1d95916f-c4a9-4392-8579-78c0edb8629c.png",
-      description: "Synchronisation automatique"
+      description: "Réservations en ligne"
     },
     { 
       name: "Beds24", 
@@ -37,8 +37,8 @@ export const Integrations = () => {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-semibold mb-4">Intégrations Natives</h2>
-          <p className="section-subtitle">Connectez vos outils existants en quelques clics</p>
+          <h2 className="text-4xl font-semibold mb-4">Intégrations</h2>
+          <p className="section-subtitle">Connectez vos outils existants</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
