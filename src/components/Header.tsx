@@ -19,15 +19,12 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center">
               <img 
                 src="/lovable-uploads/74bcdb43-2125-4bfb-b428-5d7c8c1be384.png" 
                 alt="Helphoster" 
-                className="w-10 h-10"
+                className="w-24 h-24"
               />
-              <div className="text-2xl font-bold text-gray-900">
-                Helphoster
-              </div>
             </div>
             <nav className="hidden lg:flex space-x-8">
               <a href="#accueil" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Accueil</a>
