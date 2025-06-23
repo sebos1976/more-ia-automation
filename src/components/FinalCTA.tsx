@@ -1,5 +1,10 @@
 
+import { useState } from "react";
+import { ContactForm } from "./ContactForm";
+
 export const FinalCTA = () => {
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
+
   return (
     <section className="py-20" style={{background: 'var(--gradient-hero)'}}>
       <div className="container mx-auto px-4 text-center">
@@ -8,10 +13,16 @@ export const FinalCTA = () => {
           <p className="text-xl mb-8">Rejoignez les +200 propriétaires qui ont déjà transformé leur gestion locative</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <button className="bg-white text-gray-900 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors">
-              Réserver ma démo gratuite
+            <button 
+              onClick={() => setIsContactFormOpen(true)}
+              className="bg-white text-gray-900 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors"
+            >
+              Obtenir une démonstration gratuite
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-gray-900 transition-colors">
+            <button 
+              onClick={() => setIsContactFormOpen(true)}
+              className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-gray-900 transition-colors"
+            >
               Poser une question
             </button>
           </div>
@@ -32,6 +43,11 @@ export const FinalCTA = () => {
           </div>
         </div>
       </div>
+
+      <ContactForm 
+        isOpen={isContactFormOpen}
+        onClose={() => setIsContactFormOpen(false)}
+      />
     </section>
   );
 };

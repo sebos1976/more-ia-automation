@@ -57,7 +57,7 @@ export const Footer = () => {
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
             <p>© 2025 Helphoster - Créé par Sébastien More</p>
-            <p className="text-sm">Tous droits réservés - Made with ❤️ in France</p>
+            <p className="text-sm">Tous droits réservés</p>
           </div>
           
           <div className="flex space-x-4">

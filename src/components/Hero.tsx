@@ -1,5 +1,10 @@
+import { useState } from "react";
+import { ContactForm } from "./ContactForm";
+import { PartnersLogos } from "./PartnersLogos";
 
 export const Hero = () => {
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
+
   return (
     <section id="accueil" className="hero">
       <div className="hero-container">
@@ -17,39 +22,15 @@ export const Hero = () => {
             Agent IA conversationnel = 90% de temps économisé dans la gestion de vos locations
           </p>
           
-          <div className="hero-search-widget">
-            <div className="search-input-group">
-              <div className="input-wrapper">
-                <select className="search-input">
-                  <option>Type de service</option>
-                  <option>Agent IA seul</option>
-                  <option>Gestion automatisée</option>
-                  <option>Solution complète</option>
-                </select>
-              </div>
-              
-              <div className="input-wrapper">
-                <select className="search-input">
-                  <option>Nombre de logements</option>
-                  <option>1-3 logements</option>
-                  <option>4-10 logements</option>
-                  <option>+10 logements</option>
-                </select>
-              </div>
-              
-              <div className="input-wrapper">
-                <select className="search-input">
-                  <option>Budget mensuel</option>
-                  <option>50-100€</option>
-                  <option>100-200€</option>
-                  <option>+200€</option>
-                </select>
-              </div>
-              
-              <button className="search-btn-gradient">
-                <span>Obtenir ma démo gratuite</span>
-              </button>
-            </div>
+          <PartnersLogos />
+          
+          <div className="mt-8">
+            <button 
+              onClick={() => setIsContactFormOpen(true)}
+              className="search-btn-gradient"
+            >
+              <span>Obtenir une démonstration gratuite</span>
+            </button>
           </div>
           
           <div className="hero-stats-improved">
@@ -110,6 +91,11 @@ export const Hero = () => {
           </div>
         </div>
       </div>
+
+      <ContactForm 
+        isOpen={isContactFormOpen}
+        onClose={() => setIsContactFormOpen(false)}
+      />
     </section>
   );
 };
