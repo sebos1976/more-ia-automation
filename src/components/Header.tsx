@@ -23,7 +23,7 @@ export const Header = () => {
               <img 
                 src="/lovable-uploads/1620c0b2-8206-4754-b216-9da3eb16227f.png" 
                 alt="Helphoster" 
-                className="h-20 w-auto"
+                className="h-32 w-auto"
               />
             </div>
             <nav className="hidden lg:flex space-x-8">
