@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/lib/supabase";
+import { supabase } from "@/integrations/supabase/client";
 
 interface FormData {
   prenom: string;
@@ -64,26 +64,12 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
     setIsSubmitting(true);
 
     try {
-      if (!supabase) {
-        // Fallback si Supabase n'est pas configuré
-        console.warn('Supabase non configuré - simulation d\'envoi');
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        
-        toast({
-          title: "Configuration requise",
-          description: "Veuillez connecter Supabase pour envoyer les données",
-          variant: "destructive",
-        });
-        return;
-      }
-
       const { error } = await supabase
-        .from('demandes_demonstration')
+        .from('helphoster')
         .insert([{
-          prenom: formData.prenom.trim(),
           nom: formData.nom.trim(),
           email: formData.email.trim(),
-          telephone: formData.telephone.trim()
+          Téléphone: formData.telephone.trim()
         }]);
 
       if (error) {
