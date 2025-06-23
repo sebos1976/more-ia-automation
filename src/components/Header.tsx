@@ -20,7 +20,11 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500"></div>
+              <img 
+                src="/lovable-uploads/74bcdb43-2125-4bfb-b428-5d7c8c1be384.png" 
+                alt="Helphoster" 
+                className="w-10 h-10"
+              />
               <div className="text-2xl font-bold text-gray-900">
                 Helphoster
               </div>
@@ -64,16 +68,6 @@ export const Header = () => {
             </div>
           </div>
         )}
-      </div>
-
-      <div className="partners-strip">
-        <span className="partners-label">Intégrations natives :</span>
-        <div className="partners-logos">
-          <img src="https://logos-world.net/wp-content/uploads/2020/10/Airbnb-Symbol.png" alt="Airbnb" className="partner-logo" />
-          <img src="https://logos-world.net/wp-content/uploads/2021/08/Booking-Logo.png" alt="Booking.com" className="partner-logo" />
-          <img src="https://bed24.com/pics/logo.png" alt="Beds24" className="partner-logo" />
-          <img src="/placeholder.svg" alt="Eleven Labs" className="partner-logo" />
-        </div>
       </div>
     </header>
   );
