@@ -64,10 +64,13 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
     setIsSubmitting(true);
 
     try {
+      // Créer l'objet avec le nom complet (prénom + nom)
+      const fullName = `${formData.prenom.trim()} ${formData.nom.trim()}`;
+      
       const { error } = await supabase
         .from('HELPHOSTER')
         .insert([{
-          nom: formData.nom.trim(),
+          nom: fullName,
           email: formData.email.trim(),
           Téléphone: formData.telephone.trim()
         }]);
@@ -95,7 +98,7 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
       console.error('Erreur lors de l\'envoi:', error);
       toast({
         title: "Erreur",
-        description: "Une erreur est survenue. Veuillez réessayer.",
+        description: "Une erreur est survenue. Veuillez réessayer plus tard.",
         variant: "destructive",
       });
     } finally {
