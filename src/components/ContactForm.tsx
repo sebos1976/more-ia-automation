@@ -65,7 +65,7 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
 
     try {
       const { error } = await supabase
-        .from('helphoster')
+        .from('HELPHOSTER')
         .insert([{
           nom: formData.nom.trim(),
           email: formData.email.trim(),

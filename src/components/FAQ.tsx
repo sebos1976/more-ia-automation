@@ -39,7 +39,7 @@ export const FAQ = () => {
     },
     {
       question: "Sur quelles zones géographiques opère Helphoster ?",
-      answer: "Notre IA fonctionne avec tous les comptes Airbnb, Booking en France comme à l'international."
+      answer: "Notre IA fonctionne avec tous les comptes Airbnb et Booking en France comme à l'international."
     }
   ];
 
