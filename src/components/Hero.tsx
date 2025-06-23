@@ -10,9 +10,13 @@ export const Hero = () => {
     <section id="accueil" className="hero">
       <div className="hero-container">
         <div className="hero-content">
-          <div className="hero-badge">
-            <div className="badge-icon"></div>
-            <span>Expert en automatisation Airbnb</span>
+          <div className="hero-badge flex items-center gap-4 mb-8">
+            <img 
+              src="/lovable-uploads/1620c0b2-8206-4754-b216-9da3eb16227f.png" 
+              alt="Helphoster" 
+              className="h-20 w-auto"
+            />
+            <span className="text-blue-600 font-semibold text-xl">Expert en automatisation Airbnb</span>
           </div>
           
           <h1 className="hero-title">
@@ -64,7 +68,7 @@ export const Hero = () => {
             </div>
             
             <div className="mockup-content">
-              <div className="flex-1 relative max-w-xl mx-auto">
+              <div className="flex-1 relative max-w-2xl mx-auto">
                 <img 
                   src="/lovable-uploads/d59cd207-1942-4c0b-8905-81419458fcd6.png" 
                   alt="Interface IA Helphoster" 
