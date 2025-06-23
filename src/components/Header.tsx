@@ -16,9 +16,9 @@ export const Header = () => {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center space-x-6">
             <div className="flex items-center">
               <img 
                 src="/lovable-uploads/1620c0b2-8206-4754-b216-9da3eb16227f.png" 
@@ -26,18 +26,18 @@ export const Header = () => {
                 className="h-32 w-auto"
               />
             </div>
-            <nav className="hidden lg:flex space-x-8">
-              <a href="#accueil" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Accueil</a>
-              <a href="#services" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Services</a>
-              <a href="#tarifs" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Tarifs</a>
-              <a href="https://blog.helphoster.com" target="_blank" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Blog</a>
-              <a href="mailto:contact@helphoster.com" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Contact</a>
+            <nav className="hidden lg:flex space-x-6">
+              <a href="#accueil" className="text-gray-700 hover:text-pink-500 transition-colors font-medium text-sm">Accueil</a>
+              <a href="#services" className="text-gray-700 hover:text-pink-500 transition-colors font-medium text-sm">Services</a>
+              <a href="#tarifs" className="text-gray-700 hover:text-pink-500 transition-colors font-medium text-sm">Tarifs</a>
+              <a href="https://blog.helphoster.com" target="_blank" className="text-gray-700 hover:text-pink-500 transition-colors font-medium text-sm">Blog</a>
+              <a href="mailto:contact@helphoster.com" className="text-gray-700 hover:text-pink-500 transition-colors font-medium text-sm">Contact</a>
             </nav>
           </div>
           
-          <div className="hidden lg:flex items-center space-x-4">
-            <button onClick={handleLogin} className="btn-secondary">Se connecter</button>
-            <button onClick={handleGetStarted} className="btn-gradient">Commencer</button>
+          <div className="hidden lg:flex items-center space-x-3">
+            <button onClick={handleLogin} className="btn-secondary text-sm px-3 py-1.5">Se connecter</button>
+            <button onClick={handleGetStarted} className="btn-gradient text-sm px-3 py-1.5">Commencer</button>
           </div>
 
           <button 
