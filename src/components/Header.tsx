@@ -4,6 +4,16 @@ import { useState } from "react";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleLogin = () => {
+    // Redirection vers Bubble (à configurer avec Lloyd)
+    window.open('https://helphoster.bubbleapps.io/login', '_blank');
+  };
+
+  const handleGetStarted = () => {
+    // Redirection vers Bubble (à configurer avec Lloyd)
+    window.open('https://helphoster.bubbleapps.io/signup', '_blank');
+  };
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
@@ -19,14 +29,14 @@ export const Header = () => {
               <a href="#accueil" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Accueil</a>
               <a href="#services" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Services</a>
               <a href="#tarifs" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Tarifs</a>
-              <a href="#blog" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Blog</a>
-              <a href="#contact" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Contact</a>
+              <a href="https://blog.helphoster.com" target="_blank" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Blog</a>
+              <a href="mailto:contact@helphoster.com" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Contact</a>
             </nav>
           </div>
           
           <div className="hidden lg:flex items-center space-x-4">
-            <button className="btn-secondary">Se connecter</button>
-            <button className="btn-gradient">Commencer</button>
+            <button onClick={handleLogin} className="btn-secondary">Se connecter</button>
+            <button onClick={handleGetStarted} className="btn-gradient">Commencer</button>
           </div>
 
           <button 
@@ -45,12 +55,12 @@ export const Header = () => {
               <a href="#accueil" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Accueil</a>
               <a href="#services" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Services</a>
               <a href="#tarifs" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Tarifs</a>
-              <a href="#blog" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Blog</a>
-              <a href="#contact" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Contact</a>
+              <a href="https://blog.helphoster.com" target="_blank" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Blog</a>
+              <a href="mailto:contact@helphoster.com" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">Contact</a>
             </nav>
             <div className="flex flex-col space-y-3 mt-4">
-              <button className="btn-secondary">Se connecter</button>
-              <button className="btn-gradient">Commencer</button>
+              <button onClick={handleLogin} className="btn-secondary">Se connecter</button>
+              <button onClick={handleGetStarted} className="btn-gradient">Commencer</button>
             </div>
           </div>
         )}

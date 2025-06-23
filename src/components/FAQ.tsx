@@ -35,11 +35,11 @@ export const FAQ = () => {
     },
     {
       question: "Comment me désinscrire de Helphoster ?",
-      answer: "Simplement en envoyant une demande par email à : moresebastien@gmail.com"
+      answer: "Simplement en envoyant une demande par email à : <a href='mailto:contact@helphoster.com'>contact@helphoster.com</a>"
     },
     {
       question: "Sur quelles zones géographiques opère Helphoster ?",
-      answer: "Notre IA fonctionne avec tous les comptes Airbnb, en France comme à l'international."
+      answer: "Notre IA fonctionne avec tous les comptes Airbnb, Booking en France comme à l'international."
     }
   ];
 

@@ -8,7 +8,7 @@ export const Footer = () => {
             <h4 className="text-white font-semibold mb-4">Helphoster</h4>
             <p className="mb-4">Automatisation IA pour vos locations Airbnb</p>
             <div className="contact-info space-y-2">
-              <p>📧 <a href="mailto:moresebastien@gmail.com" className="hover:text-pink-400 transition-colors">moresebastien@gmail.com</a></p>
+              <p>📧 <a href="mailto:contact@helphoster.com" className="hover:text-pink-400 transition-colors">contact@helphoster.com</a></p>
               <p>🎥 <a href="https://www.youtube.com/@moresebastien" target="_blank" className="hover:text-pink-400 transition-colors">41K+ abonnés YouTube</a></p>
             </div>
           </div>
@@ -25,7 +25,7 @@ export const Footer = () => {
           <div className="footer-column">
             <h4 className="text-white font-semibold mb-4">Ressources</h4>
             <ul className="space-y-2">
-              <li><a href="/blog" className="hover:text-pink-400 transition-colors">Blog</a></li>
+              <li><a href="https://blog.helphoster.com" target="_blank" className="hover:text-pink-400 transition-colors">Blog</a></li>
               <li><a href="https://www.youtube.com/@moresebastien" target="_blank" className="hover:text-pink-400 transition-colors">YouTube</a></li>
               <li><a href="/guides" className="hover:text-pink-400 transition-colors">Guides</a></li>
             </ul>
@@ -56,7 +56,7 @@ export const Footer = () => {
 
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
-            <p>© 2024 Helphoster - Créé par Sébastien More</p>
+            <p>© 2025 Helphoster - Créé par Sébastien More</p>
             <p className="text-sm">Tous droits réservés - Made with ❤️ in France</p>
           </div>
           
@@ -66,7 +66,7 @@ export const Footer = () => {
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
               </svg>
             </a>
-            <a href="mailto:moresebastien@gmail.com" className="text-gray-400 hover:text-pink-400 transition-colors">
+            <a href="mailto:contact@helphoster.com" className="text-gray-400 hover:text-pink-400 transition-colors">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
               </svg>
