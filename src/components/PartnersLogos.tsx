@@ -1,4 +1,5 @@
 
+
 export const PartnersLogos = () => {
   const avantages = [
     "Essai gratuit 14 jours",
@@ -31,6 +32,21 @@ export const PartnersLogos = () => {
           ))}
         </div>
       </div>
+
+      {/* Logos des partenaires */}
+      <div className="flex items-center justify-center gap-8 mt-6">
+        <img 
+          src="/lovable-uploads/c46c96bc-1684-4106-a074-97a6ab11b53e.png" 
+          alt="Airbnb" 
+          className="w-20 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+        />
+        <img 
+          src="/lovable-uploads/65241fa1-11cd-430c-b7bf-6b6477753269.png" 
+          alt="Booking.com" 
+          className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+        />
+      </div>
     </div>
   );
 };
+
