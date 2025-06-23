@@ -64,6 +64,19 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
     setIsSubmitting(true);
 
     try {
+      if (!supabase) {
+        // Fallback si Supabase n'est pas configuré
+        console.warn('Supabase non configuré - simulation d\'envoi');
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        
+        toast({
+          title: "Configuration requise",
+          description: "Veuillez connecter Supabase pour envoyer les données",
+          variant: "destructive",
+        });
+        return;
+      }
+
       const { error } = await supabase
         .from('demandes_demonstration')
         .insert([{
