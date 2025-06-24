@@ -11,6 +11,7 @@ import { YouTubeSection } from "@/components/YouTubeSection";
 import { Integrations } from "@/components/Integrations";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
+import { CookieBanner } from "@/components/CookieBanner";
 
 const Index = () => {
   return (
@@ -27,6 +28,7 @@ const Index = () => {
       <Integrations />
       <FinalCTA />
       <Footer />
+      <CookieBanner />
     </div>
   );
 };
