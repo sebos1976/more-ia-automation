@@ -69,44 +69,44 @@ export const Pricing = () => {
             </button>
           </div>
 
-          {/* Plan Sur Mesure */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Sur mesure</h3>
+          {/* Plan Sur Mesure avec dégradé rose iOS 18 */}
+          <div className="bg-gradient-to-br from-pink-400 via-rose-400 to-pink-500 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow relative">
+            <h3 className="text-2xl font-bold text-white mb-2">Sur mesure</h3>
             <div className="mb-4">
-              <span className="text-4xl font-bold text-gray-900">Sur devis</span>
+              <span className="text-4xl font-bold text-white">Sur devis</span>
             </div>
-            <p className="text-gray-600 mb-6">Solution personnalisée</p>
+            <p className="text-pink-100 mb-6">Solution personnalisée</p>
 
             <div className="space-y-3 mb-8">
               <div className="flex items-center">
-                <span className="text-green-500 font-bold mr-3">✓</span>
-                <span className="text-gray-700">Tout du plan standard</span>
+                <span className="text-white font-bold mr-3">✓</span>
+                <span className="text-white">Tout du plan standard</span>
               </div>
               <div className="flex items-center">
-                <span className="text-green-500 font-bold mr-3">✓</span>
-                <span className="text-gray-700">Intégrations personnalisées</span>
+                <span className="text-white font-bold mr-3">✓</span>
+                <span className="text-white">Intégrations personnalisées</span>
               </div>
               <div className="flex items-center">
-                <span className="text-green-500 font-bold mr-3">✓</span>
-                <span className="text-gray-700">Support prioritaire</span>
+                <span className="text-white font-bold mr-3">✓</span>
+                <span className="text-white">Support prioritaire</span>
               </div>
               <div className="flex items-center">
-                <span className="text-green-500 font-bold mr-3">✓</span>
-                <span className="text-gray-700">Gestionnaire dédié</span>
+                <span className="text-white font-bold mr-3">✓</span>
+                <span className="text-white">Gestionnaire dédié</span>
               </div>
               <div className="flex items-center">
-                <span className="text-green-500 font-bold mr-3">✓</span>
-                <span className="text-gray-700">Formation équipe complète</span>
+                <span className="text-white font-bold mr-3">✓</span>
+                <span className="text-white">Formation équipe complète</span>
               </div>
               <div className="flex items-center">
-                <span className="text-green-500 font-bold mr-3">✓</span>
-                <span className="text-gray-700">API accès complet</span>
+                <span className="text-white font-bold mr-3">✓</span>
+                <span className="text-white">API accès complet</span>
               </div>
             </div>
 
             <button 
               onClick={() => setIsDevisFormOpen(true)}
-              className="w-full bg-white border-2 border-blue-600 text-blue-600 py-3 px-6 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+              className="w-full bg-white/20 backdrop-blur-sm border-2 border-white/30 text-white py-3 px-6 rounded-lg font-semibold hover:bg-white/30 transition-colors"
             >
               Demander un devis
             </button>
