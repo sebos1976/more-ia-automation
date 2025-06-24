@@ -7,11 +7,11 @@ export const FAQ = () => {
   const faqs = [
     {
       question: "Qu'est-ce que Helphoster ?",
-      answer: "Helphoster est votre copilote IA pour automatiser la gestion de vos locations Airbnb. Notre IA co-host répond automatiquement à vos voyageurs 24h/24 et simplifie votre quotidien."
+      answer: "Helphoster est votre copilote IA pour automatiser la gestion de vos locations Airbnb et Booking. Notre IA co-host répond automatiquement à vos voyageurs 24h/24 et simplifie votre quotidien."
     },
     {
       question: "À qui s'adresse Helphoster ?",
-      answer: "Propriétaires de locations Airbnb ou conciergeries souhaitant optimiser la gestion de leurs logements. Que vous gériez un bien ou plusieurs, notre IA s'adapte à vos besoins."
+      answer: "Propriétaires de locations Airbnb et Booking ou conciergeries souhaitant optimiser la gestion de leurs logements. Que vous gériez un bien ou plusieurs, notre IA s'adapte à vos besoins."
     },
     {
       question: "Comment l'IA co-host m'aide-t-elle ?",
@@ -19,11 +19,11 @@ export const FAQ = () => {
     },
     {
       question: "Comment fonctionne l'IA co-host de Helphoster ?",
-      answer: "L'IA se connecte à votre compte Airbnb (et bientôt Booking, Abritel…) et répond instantanément aux messages, en tenant compte du contexte et de votre annonce."
+      answer: "L'IA se connecte à votre compte Airbnb et Booking et répond instantanément aux messages, en tenant compte du contexte et de votre annonce."
     },
     {
       question: "Ai-je besoin d'un logiciel ou PMS pour utiliser Helphoster ?",
-      answer: "Non, Helphoster fonctionne directement avec Airbnb. Pour d'autres plateformes (Booking, Abritel), un PMS (Beds24, Smoobu, Lodgify) est recommandé."
+      answer: "Oui, aujourd'hui Helphoster fonctionne uniquement avec le channel manager BEDS24 et bientôt Smoobu et Guestlucky."
     },
     {
       question: "Mes voyageurs ont-ils besoin de télécharger une app ?",
@@ -39,7 +39,7 @@ export const FAQ = () => {
     },
     {
       question: "Sur quelles zones géographiques opère Helphoster ?",
-      answer: "Notre IA fonctionne avec tous les comptes Airbnb et Booking en France comme à l'international."
+      answer: "Notre IA fonctionne avec tous les comptes Airbnb et Booking, en France comme à l'international."
     }
   ];
 
