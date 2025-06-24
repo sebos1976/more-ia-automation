@@ -101,37 +101,27 @@ export const Hero = () => {
               </div>
             </div>
             
-            {/* STATISTIQUES EN CARRÉS COLORÉS AVEC ANIMATIONS */}
-            <div className="grid grid-cols-3 gap-6 text-center mt-8">
+            {/* STATISTIQUES SIMPLES ET PROPRES */}
+            <div className="grid grid-cols-3 gap-6 mt-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-2">
+                  <span className="text-lg font-bold text-white">200+</span>
+                </div>
+                <p className="text-sm text-gray-600">Propriétaires accompagnés</p>
+              </div>
               
-              {/* Statistique 1 - CARRÉ */}
-              <div className="group cursor-pointer">
-                <div className="relative">
-                  <div className="w-24 h-24 mx-auto bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
-                    <span className="text-2xl font-bold text-white">200+</span>
-                  </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-purple-500 rounded-lg flex items-center justify-center mx-auto mb-2">
+                  <span className="text-lg font-bold text-white">90%</span>
                 </div>
-                <p className="text-sm text-gray-600 mt-3 font-medium">Propriétaires accompagnés</p>
+                <p className="text-sm text-gray-600">De temps économisé</p>
               </div>
-
-              {/* Statistique 2 - CARRÉ */}
-              <div className="group cursor-pointer">
-                <div className="relative">
-                  <div className="w-24 h-24 mx-auto bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
-                    <span className="text-2xl font-bold text-white">90%</span>
-                  </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-indigo-500 rounded-lg flex items-center justify-center mx-auto mb-2">
+                  <span className="text-lg font-bold text-white">24/7</span>
                 </div>
-                <p className="text-sm text-gray-600 mt-3 font-medium">De temps économisé</p>
-              </div>
-
-              {/* Statistique 3 - CARRÉ */}
-              <div className="group cursor-pointer">
-                <div className="relative">
-                  <div className="w-24 h-24 mx-auto bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
-                    <span className="text-2xl font-bold text-white">24/7</span>
-                  </div>
-                </div>
-                <p className="text-sm text-gray-600 mt-3 font-medium">Disponibilité</p>
+                <p className="text-sm text-gray-600">Disponibilité</p>
               </div>
             </div>
           </div>
