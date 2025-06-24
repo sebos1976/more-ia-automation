@@ -88,6 +88,40 @@ export const Hero = () => {
                 </div>
               </div>
             </div>
+
+            {/* Statistiques sous l'image dashboard */}
+            <div className="grid grid-cols-3 gap-4 mt-6">
+              <div className="group cursor-pointer">
+                <div className="relative">
+                  <div className="w-20 h-20 bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl group-hover:rotate-3">
+                    <span className="text-xl font-bold text-white">200+</span>
+                  </div>
+                  {/* Effet brillance */}
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <p className="text-sm text-gray-600 mt-2 text-center font-medium">Propriétaires</p>
+              </div>
+
+              <div className="group cursor-pointer">
+                <div className="relative">
+                  <div className="w-20 h-20 bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 rounded-2xl flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl group-hover:rotate-3">
+                    <span className="text-xl font-bold text-white">90%</span>
+                  </div>
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <p className="text-sm text-gray-600 mt-2 text-center font-medium">Temps économisé</p>
+              </div>
+
+              <div className="group cursor-pointer">
+                <div className="relative">
+                  <div className="w-20 h-20 bg-gradient-to-br from-indigo-600 via-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl group-hover:rotate-3">
+                    <span className="text-xl font-bold text-white">24/7</span>
+                  </div>
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <p className="text-sm text-gray-600 mt-2 text-center font-medium">Disponibilité</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
