@@ -8,7 +8,7 @@ export const FinalCTA = () => {
   const [isDevisFormOpen, setIsDevisFormOpen] = useState(false);
 
   return (
-    <section className="py-20" style={{background: 'var(--gradient-hero)'}}>
+    <section className="py-20 bg-gradient-to-r from-pink-500 to-purple-600">
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-3xl mx-auto text-white">
           <h2 className="text-4xl font-semibold mb-4">Prêt à automatiser votre Airbnb ?</h2>
