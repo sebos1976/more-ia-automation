@@ -88,24 +88,6 @@ export const Hero = () => {
                 </div>
               </div>
             </div>
-            
-            {/* STATISTIQUES SIMPLES */}
-            <div className="grid grid-cols-3 gap-4 mt-6">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">200+</div>
-                <div className="text-sm text-gray-600">Propriétaires</div>
-              </div>
-              
-              <div className="text-center">
-                <div className="text-2xl font-bold text-purple-600">90%</div>
-                <div className="text-sm text-gray-600">Temps économisé</div>
-              </div>
-              
-              <div className="text-center">
-                <div className="text-2xl font-bold text-indigo-600">24/7</div>
-                <div className="text-sm text-gray-600">Disponibilité</div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
