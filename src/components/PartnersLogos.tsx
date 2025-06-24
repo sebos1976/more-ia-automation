@@ -1,3 +1,4 @@
+
 export const PartnersLogos = () => {
   const avantages = [
     "Essai gratuit 14 jours",
@@ -34,9 +35,9 @@ export const PartnersLogos = () => {
       {/* Logos des partenaires - AGRANDIS */}
       <div className="flex items-center justify-center gap-8 mt-6">
         <img 
-          src="/lovable-uploads/c46c96bc-1684-4106-a074-97a6ab11b53e.png" 
+          src="/lovable-uploads/8561c316-79cb-4783-b388-9825eecdb4d8.png" 
           alt="Airbnb" 
-          className="w-24 h-24 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+          className="w-32 h-24 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
         />
         <img 
           src="/lovable-uploads/65241fa1-11cd-430c-b7bf-6b6477753269.png" 
