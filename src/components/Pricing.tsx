@@ -17,83 +17,47 @@ export const Pricing = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-semibold mb-4">Tarifs Transparents</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Choisissez l'offre qui correspond à vos besoins. Pas d'engagement, résiliation à tout moment.
+            Une tarification simple et transparente. Pas d'engagement, résiliation à tout moment.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {/* Plan Starter */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Starter</h3>
-            <div className="mb-4">
-              <span className="text-4xl font-bold text-gray-900">97€</span>
-              <span className="text-lg text-gray-600">/mois</span>
-            </div>
-            <p className="text-gray-600 mb-6">Idéal pour débuter avec l'IA</p>
-
-            <div className="space-y-3 mb-8">
-              <div className="flex items-center">
-                <span className="text-green-500 font-bold mr-3">✓</span>
-                <span className="text-gray-700">Agent IA conversationnel 24/7</span>
-              </div>
-              <div className="flex items-center">
-                <span className="text-green-500 font-bold mr-3">✓</span>
-                <span className="text-gray-700">Intégrations Airbnb & Booking</span>
-              </div>
-              <div className="flex items-center">
-                <span className="text-green-500 font-bold mr-3">✓</span>
-                <span className="text-gray-700">Support multilingue</span>
-              </div>
-              <div className="flex items-center">
-                <span className="text-green-500 font-bold mr-3">✓</span>
-                <span className="text-gray-700">Formation incluse</span>
-              </div>
-              <div className="flex items-center">
-                <span className="text-green-500 font-bold mr-3">✓</span>
-                <span className="text-gray-700">Analytics de base</span>
-              </div>
-            </div>
-
-            <button 
-              onClick={handleStartNow}
-              className="w-full bg-white border-2 border-blue-600 text-blue-600 py-3 px-6 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
-            >
-              Commencer maintenant
-            </button>
-          </div>
-
-          {/* Plan Premium */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* Plan Principal */}
           <div className="bg-blue-600 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow relative border-2 border-blue-500">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
               Le plus populaire
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Premium</h3>
+            <h3 className="text-2xl font-bold text-white mb-2">Helphoster</h3>
             <div className="mb-4">
-              <span className="text-4xl font-bold text-white">197€</span>
-              <span className="text-lg text-blue-100">/mois</span>
+              <span className="text-5xl font-bold text-white">5€</span>
+              <span className="text-lg text-blue-100">/ logement / mois</span>
             </div>
-            <p className="text-blue-100 mb-6">Pour optimiser vos revenus</p>
+            <p className="text-blue-100 mb-6">Facturation mensuelle</p>
 
             <div className="space-y-3 mb-8">
               <div className="flex items-center">
                 <span className="text-green-300 font-bold mr-3">✓</span>
-                <span className="text-white">Tout du plan Starter</span>
+                <span className="text-white">Agent IA conversationnel 24/7</span>
               </div>
               <div className="flex items-center">
                 <span className="text-green-300 font-bold mr-3">✓</span>
-                <span className="text-white">Support prioritaire 24/7</span>
+                <span className="text-white">Intégrations Airbnb & Booking</span>
               </div>
               <div className="flex items-center">
                 <span className="text-green-300 font-bold mr-3">✓</span>
-                <span className="text-white">Gestionnaire de compte dédié</span>
+                <span className="text-white">Support multilingue</span>
               </div>
               <div className="flex items-center">
                 <span className="text-green-300 font-bold mr-3">✓</span>
-                <span className="text-white">Analytics avancés</span>
+                <span className="text-white">Analytics de base</span>
               </div>
               <div className="flex items-center">
                 <span className="text-green-300 font-bold mr-3">✓</span>
-                <span className="text-white">SLA garantie</span>
+                <span className="text-white">Formation incluse</span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-green-300 font-bold mr-3">✓</span>
+                <span className="text-white">Support français</span>
               </div>
             </div>
 
@@ -105,18 +69,18 @@ export const Pricing = () => {
             </button>
           </div>
 
-          {/* Plan Enterprise */}
+          {/* Plan Sur Mesure */}
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Enterprise</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Sur mesure</h3>
             <div className="mb-4">
-              <span className="text-4xl font-bold text-gray-900">Sur mesure</span>
+              <span className="text-4xl font-bold text-gray-900">Sur devis</span>
             </div>
             <p className="text-gray-600 mb-6">Solution personnalisée</p>
 
             <div className="space-y-3 mb-8">
               <div className="flex items-center">
                 <span className="text-green-500 font-bold mr-3">✓</span>
-                <span className="text-gray-700">Tout du plan Premium</span>
+                <span className="text-gray-700">Tout du plan standard</span>
               </div>
               <div className="flex items-center">
                 <span className="text-green-500 font-bold mr-3">✓</span>
@@ -124,11 +88,15 @@ export const Pricing = () => {
               </div>
               <div className="flex items-center">
                 <span className="text-green-500 font-bold mr-3">✓</span>
-                <span className="text-gray-700">Formation équipe complète</span>
+                <span className="text-gray-700">Support prioritaire</span>
               </div>
               <div className="flex items-center">
                 <span className="text-green-500 font-bold mr-3">✓</span>
-                <span className="text-gray-700">Support technique dédié</span>
+                <span className="text-gray-700">Gestionnaire dédié</span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-green-500 font-bold mr-3">✓</span>
+                <span className="text-gray-700">Formation équipe complète</span>
               </div>
               <div className="flex items-center">
                 <span className="text-green-500 font-bold mr-3">✓</span>
