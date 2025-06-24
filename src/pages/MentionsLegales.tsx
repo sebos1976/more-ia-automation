@@ -6,42 +6,40 @@ const MentionsLegales = () => {
         <h1 className="text-4xl font-bold text-gray-900 mb-8">Mentions Légales</h1>
         
         <div className="bg-white rounded-lg shadow-lg p-8 prose prose-lg max-w-none">
-          <h2>Éditeur du site</h2>
+          <h2>1. ÉDITEUR DU SITE</h2>
           <p>
-            <strong>Helphoster</strong><br />
-            Créé par Sébastien More<br />
-            Email : <a href="mailto:contact@helphoster.com">contact@helphoster.com</a>
+            <strong>Raison sociale :</strong> Helphoster<br/>
+            <strong>Représentant légal :</strong> Sébastien More<br/>
+            <strong>Email :</strong> contact@helphoster.com<br/>
+            <strong>Site web :</strong> https://helphoster.com
           </p>
           
-          <h2>Hébergement</h2>
+          <h2>2. HÉBERGEMENT</h2>
           <p>
-            Site hébergé par Lovable<br />
-            Service de développement d'applications web
+            Le site est hébergé par :<br/>
+            <strong>Vercel Inc.</strong><br/>
+            340 S Lemon Ave #4133<br/>
+            Walnut, CA 91789<br/>
+            États-Unis
           </p>
           
-          <h2>Propriété intellectuelle</h2>
-          <p>
-            Le contenu du site Helphoster (textes, images, logos) est protégé par le droit d'auteur. 
-            Toute reproduction sans autorisation est interdite.
-          </p>
+          <h2>3. PROPRIÉTÉ INTELLECTUELLE</h2>
+          <p>L'ensemble du contenu du site (textes, images, logos, etc.) est protégé par le droit d'auteur. Toute reproduction sans autorisation est interdite.</p>
           
-          <h2>Données personnelles</h2>
-          <p>
-            Les données collectées sont utilisées uniquement pour le fonctionnement du service. 
-            Voir notre <a href="/confidentialite">politique de confidentialité</a>.
-          </p>
+          <h2>4. DONNÉES PERSONNELLES</h2>
+          <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles. Contact : contact@helphoster.com</p>
           
-          <h2>Cookies</h2>
-          <p>
-            Le site utilise des cookies pour améliorer l'expérience utilisateur. 
-            Voir notre <a href="/cookies">politique cookies</a>.
-          </p>
+          <h2>5. COOKIES</h2>
+          <p>Ce site utilise des cookies pour améliorer l'expérience utilisateur et analyser le trafic. Vous pouvez les accepter ou les refuser via le bandeau de consentement.</p>
           
-          <h2>Contact</h2>
-          <p>
-            Pour toute question concernant ces mentions légales : 
-            <a href="mailto:contact@helphoster.com">contact@helphoster.com</a>
-          </p>
+          <h2>6. RESPONSABILITÉ</h2>
+          <p>L'éditeur s'efforce de maintenir les informations à jour mais ne peut garantir l'exactitude, la complétude ou l'actualité des informations diffusées.</p>
+          
+          <h2>7. LIENS EXTERNES</h2>
+          <p>Le site peut contenir des liens vers des sites externes. L'éditeur n'est pas responsable du contenu de ces sites.</p>
+          
+          <h2>8. DROIT APPLICABLE</h2>
+          <p>Les présentes mentions légales sont soumises au droit français.</p>
         </div>
       </div>
     </div>
