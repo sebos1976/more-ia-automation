@@ -31,34 +31,26 @@ export const Hero = () => {
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200/50">
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-                    </svg>
+                  <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xs">✓</span>
                   </div>
                   <span className="text-sm font-medium text-gray-700">Essai gratuit 14 jours</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-                    </svg>
+                  <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xs">✓</span>
                   </div>
                   <span className="text-sm font-medium text-gray-700">Sans engagement</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-                    </svg>
+                  <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xs">✓</span>
                   </div>
                   <span className="text-sm font-medium text-gray-700">Support français</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-                    </svg>
+                  <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xs">✓</span>
                   </div>
                   <span className="text-sm font-medium text-gray-700">Mise à jour incluses</span>
                 </div>
@@ -79,49 +71,39 @@ export const Hero = () => {
             
             {/* IMAGE DASHBOARD */}
             <div className="relative">
-              <div className="dashboard-mockup">
-                <div className="mockup-header">
-                  <div className="mockup-dots">
-                    <span className="dot red"></span>
-                    <span className="dot yellow"></span>
-                    <span className="dot green"></span>
-                  </div>
-                  <div className="mockup-title">Dashboard IA - Helphoster</div>
+              <div className="bg-white rounded-lg shadow-xl p-4">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <span className="ml-4 text-sm text-gray-600">Dashboard IA - Helphoster</span>
                 </div>
                 
-                <div className="mockup-content">
-                  <div className="flex-1 relative max-w-2xl mx-auto">
-                    <img 
-                      src="/lovable-uploads/d59cd207-1942-4c0b-8905-81419458fcd6.png" 
-                      alt="Interface IA Helphoster" 
-                      className="w-full h-auto object-contain rounded-lg shadow-2xl"
-                    />
-                  </div>
+                <div className="relative">
+                  <img 
+                    src="/lovable-uploads/d59cd207-1942-4c0b-8905-81419458fcd6.png" 
+                    alt="Interface IA Helphoster" 
+                    className="w-full h-auto object-contain rounded-lg"
+                  />
                 </div>
               </div>
             </div>
             
-            {/* STATISTIQUES SIMPLES ET PROPRES */}
-            <div className="grid grid-cols-3 gap-6 mt-8">
+            {/* STATISTIQUES SIMPLES */}
+            <div className="grid grid-cols-3 gap-4 mt-6">
               <div className="text-center">
-                <div className="w-16 h-16 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-2">
-                  <span className="text-lg font-bold text-white">200+</span>
-                </div>
-                <p className="text-sm text-gray-600">Propriétaires accompagnés</p>
+                <div className="text-2xl font-bold text-blue-600">200+</div>
+                <div className="text-sm text-gray-600">Propriétaires</div>
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-purple-500 rounded-lg flex items-center justify-center mx-auto mb-2">
-                  <span className="text-lg font-bold text-white">90%</span>
-                </div>
-                <p className="text-sm text-gray-600">De temps économisé</p>
+                <div className="text-2xl font-bold text-purple-600">90%</div>
+                <div className="text-sm text-gray-600">Temps économisé</div>
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-indigo-500 rounded-lg flex items-center justify-center mx-auto mb-2">
-                  <span className="text-lg font-bold text-white">24/7</span>
-                </div>
-                <p className="text-sm text-gray-600">Disponibilité</p>
+                <div className="text-2xl font-bold text-indigo-600">24/7</div>
+                <div className="text-sm text-gray-600">Disponibilité</div>
               </div>
             </div>
           </div>
