@@ -101,40 +101,35 @@ export const Hero = () => {
               </div>
             </div>
             
-            {/* STATISTIQUES EN BULLES COLORÉES AVEC ANIMATIONS */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center mt-8">
+            {/* STATISTIQUES EN CARRÉS COLORÉS AVEC ANIMATIONS */}
+            <div className="grid grid-cols-3 gap-6 text-center mt-8">
               
-              {/* Statistique 1 */}
+              {/* Statistique 1 - CARRÉ */}
               <div className="group cursor-pointer">
                 <div className="relative">
-                  {/* Bulle avec effet */}
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl">
-                    <span className="text-xl sm:text-2xl font-bold text-white">200+</span>
+                  <div className="w-24 h-24 mx-auto bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
+                    <span className="text-2xl font-bold text-white">200+</span>
                   </div>
-                  {/* Effet de brillance au survol */}
-                  <div className="absolute inset-0 w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 </div>
                 <p className="text-sm text-gray-600 mt-3 font-medium">Propriétaires accompagnés</p>
               </div>
 
-              {/* Statistique 2 */}
+              {/* Statistique 2 - CARRÉ */}
               <div className="group cursor-pointer">
                 <div className="relative">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl">
-                    <span className="text-xl sm:text-2xl font-bold text-white">90%</span>
+                  <div className="w-24 h-24 mx-auto bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
+                    <span className="text-2xl font-bold text-white">90%</span>
                   </div>
-                  <div className="absolute inset-0 w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 </div>
                 <p className="text-sm text-gray-600 mt-3 font-medium">De temps économisé</p>
               </div>
 
-              {/* Statistique 3 */}
+              {/* Statistique 3 - CARRÉ */}
               <div className="group cursor-pointer">
                 <div className="relative">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl">
-                    <span className="text-xl sm:text-2xl font-bold text-white">24/7</span>
+                  <div className="w-24 h-24 mx-auto bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
+                    <span className="text-2xl font-bold text-white">24/7</span>
                   </div>
-                  <div className="absolute inset-0 w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 </div>
                 <p className="text-sm text-gray-600 mt-3 font-medium">Disponibilité</p>
               </div>
