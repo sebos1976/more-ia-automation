@@ -12,6 +12,10 @@ export const Header = () => {
     window.open('https://app.helphoster.com/', '_blank');
   };
 
+  const handleBlogClick = () => {
+    window.open('https://blog.helphoster.com', '_blank');
+  };
+
   return (
     <header className="w-full bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -30,7 +34,7 @@ export const Header = () => {
             <a href="#accueil" className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-sm">Accueil</a>
             <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-sm">Services</a>
             <a href="#tarifs" className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-sm">Tarifs</a>
-            <a href="https://blog.helphoster.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-sm">Blog</a>
+            <button onClick={handleBlogClick} className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-sm">Blog</button>
             <a href="mailto:contact@helphoster.com" className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-sm">Contact</a>
           </div>
           
@@ -58,7 +62,7 @@ export const Header = () => {
               <a href="#accueil" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Accueil</a>
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</a>
               <a href="#tarifs" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Tarifs</a>
-              <a href="https://blog.helphoster.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Blog</a>
+              <button onClick={handleBlogClick} className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left">Blog</button>
               <a href="mailto:contact@helphoster.com" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
             </nav>
             <div className="flex flex-col space-y-3 mt-4">
