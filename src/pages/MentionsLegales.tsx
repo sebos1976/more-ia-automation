@@ -8,7 +8,8 @@ const MentionsLegales = () => {
         <div className="bg-white rounded-lg shadow-lg p-8 prose prose-lg max-w-none">
           <h2>1. ÉDITEUR DU SITE</h2>
           <p>
-            <strong>Raison sociale :</strong> Helphoster<br/>
+            <strong>Raison sociale :</strong> MA INDUSTRY<br/>
+            <strong>Adresse :</strong> MA INDUSTRY KOWLOON Room 803, Chevalier House 45-51, China<br/>
             <strong>Représentant légal :</strong> Sébastien More<br/>
             <strong>Email :</strong> contact@helphoster.com<br/>
             <strong>Site web :</strong> https://helphoster.com
@@ -17,10 +18,10 @@ const MentionsLegales = () => {
           <h2>2. HÉBERGEMENT</h2>
           <p>
             Le site est hébergé par :<br/>
-            <strong>Vercel Inc.</strong><br/>
-            340 S Lemon Ave #4133<br/>
-            Walnut, CA 91789<br/>
-            États-Unis
+            <strong>PlanetHoster</strong><br/>
+            4416 Louis-B-Mayer<br/>
+            Laval, QC H7P 0G1<br/>
+            Canada
           </p>
           
           <h2>3. PROPRIÉTÉ INTELLECTUELLE</h2>

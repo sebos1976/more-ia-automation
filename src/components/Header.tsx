@@ -19,7 +19,7 @@ export const Header = () => {
           {/* Logo - TAILLE AGRANDIE */}
           <div className="flex-shrink-0">
             <img 
-              src="/lovable-uploads/1620c0b2-8206-4754-b216-9da3eb16227f.png" 
+              src="/lovable-uploads/4a82c05f-3748-4d38-b263-3d870a64f4f1.png" 
               alt="Helphoster" 
               className="h-20 w-auto"
             />
