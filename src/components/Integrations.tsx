@@ -13,23 +13,18 @@ export const Integrations = () => {
     },
     { 
       name: "Beds24", 
-      logo: "/lovable-uploads/e1576377-ca27-44bb-b15e-6df20eb89eb5.png",
-      description: "Gestion centralisée"
+      logo: "/lovable-uploads/5f79f5c2-a53d-41de-8983-c2e5dc76ce9f.png",
+      description: "Channel Manager"
     },
     { 
-      name: "Eleven Labs", 
-      logo: "/lovable-uploads/839d60ce-ceaa-4603-8159-97da8d1850ca.png",
-      description: "IA vocale avancée"
+      name: "Smoobu", 
+      logo: "/lovable-uploads/97f2dc35-023f-4cd3-b7c4-1fd00ca7b35d.png",
+      description: "Gestion locative"
     },
     { 
-      name: "Vapi", 
-      logo: "/lovable-uploads/81b91ce8-88bd-4c7f-bcc3-32541c1b4434.png",
-      description: "API conversation"
-    },
-    { 
-      name: "Make", 
-      logo: "/lovable-uploads/acc1d049-d33e-48de-a7b6-f1c8493eeecf.png",
-      description: "Automatisation workflows"
+      name: "Guestlucky", 
+      logo: "/lovable-uploads/78e143ae-f08a-4652-86c5-771c55d37c4f.png",
+      description: "PMS intégré"
     }
   ];
 
@@ -41,7 +36,7 @@ export const Integrations = () => {
           <p className="section-subtitle">Connectez vos outils existants</p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {integrations.map((integration, index) => (
             <div key={index} className="text-center">
               <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">

@@ -19,11 +19,11 @@ export const FAQ = () => {
     },
     {
       question: "Comment fonctionne l'IA co-host de Helphoster ?",
-      answer: "L'IA se connecte à votre compte Airbnb et Booking et répond instantanément aux messages, en tenant compte du contexte et de votre annonce."
+      answer: "L'IA se connecte à votre compte Airbnb et Booking via votre PMS (Beds24, Smoobu, Guestlucky) et répond instantanément aux messages, en tenant compte du contexte et de votre annonce."
     },
     {
       question: "Ai-je besoin d'un logiciel ou PMS pour utiliser Helphoster ?",
-      answer: "Oui, aujourd'hui Helphoster fonctionne uniquement avec le channel manager BEDS24 et bientôt Smoobu et Guestlucky."
+      answer: "Oui, Helphoster fonctionne avec les channel managers et PMS suivants : Beds24, Smoobu et Guestlucky. Ces logiciels permettent l'intégration avec Airbnb et Booking.com."
     },
     {
       question: "Mes voyageurs ont-ils besoin de télécharger une app ?",
@@ -39,7 +39,7 @@ export const FAQ = () => {
     },
     {
       question: "Sur quelles zones géographiques opère Helphoster ?",
-      answer: "Notre IA fonctionne avec tous les comptes Airbnb et Booking, en France comme à l'international."
+      answer: "Notre IA fonctionne avec tous les comptes Airbnb et Booking.com connectés via Beds24, Smoobu ou Guestlucky, en France comme à l'international."
     }
   ];
 
