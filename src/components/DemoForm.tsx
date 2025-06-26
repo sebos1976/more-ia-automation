@@ -79,8 +79,8 @@ export const DemoForm = ({ isOpen, onClose }: DemoFormProps) => {
       }
       
       toast({
-        title: "Merci !",
-        description: "Votre démonstration sera programmée sous 24h",
+        title: "Demande de démonstration reçue !",
+        description: "Nous vous contacterons sous 24h pour programmer votre démonstration gratuite",
       });
 
       // Reset form
@@ -171,7 +171,7 @@ export const DemoForm = ({ isOpen, onClose }: DemoFormProps) => {
             disabled={isSubmitting}
             className="w-full py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
           >
-            {isSubmitting ? "Envoi en cours..." : "Envoyer ma demande"}
+            {isSubmitting ? "Envoi en cours..." : "Demander ma démonstration gratuite"}
           </Button>
         </form>
 
