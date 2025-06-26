@@ -1,4 +1,5 @@
 
+
 export const Integrations = () => {
   const integrations = [
     { 
@@ -18,7 +19,7 @@ export const Integrations = () => {
     },
     { 
       name: "Smoobu", 
-      logo: "/lovable-uploads/97f2dc35-023f-4cd3-b7c4-1fd00ca7b35d.png",
+      logo: "/lovable-uploads/200c0bd9-7e0a-4cce-bf6f-402ada84386a.png",
       description: "Gestion locative"
     },
     { 
@@ -54,3 +55,4 @@ export const Integrations = () => {
     </section>
   );
 };
+
