@@ -2,14 +2,16 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
-interface FormData {
-  prenom: string;
+interface ContactFormData {
   nom: string;
   email: string;
   telephone: string;
+  entreprise: string;
+  besoin: string;
 }
 
 interface ContactFormProps {
@@ -18,26 +20,27 @@ interface ContactFormProps {
 }
 
 export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
-  const [formData, setFormData] = useState<FormData>({
-    prenom: '',
+  const [formData, setFormData] = useState<ContactFormData>({
     nom: '',
     email: '',
-    telephone: ''
+    telephone: '',
+    entreprise: '',
+    besoin: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleInputChange = (field: keyof FormData, value: string) => {
+  const handleInputChange = (field: keyof ContactFormData, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
   const validateForm = () => {
-    const { prenom, nom, email, telephone } = formData;
+    const { nom, email, telephone, besoin } = formData;
     
-    if (!prenom.trim() || !nom.trim() || !email.trim() || !telephone.trim()) {
+    if (!nom.trim() || !email.trim() || !telephone.trim() || !besoin.trim()) {
       toast({
         title: "Erreur",
-        description: "Tous les champs sont obligatoires",
+        description: "Les champs nom, email, téléphone et besoin sont obligatoires",
         variant: "destructive",
       });
       return false;
@@ -65,12 +68,13 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
 
     try {
       const { error } = await supabase
-        .from('helphoster_demo')
+        .from('contacts')
         .insert([{
-          prenom: formData.prenom.trim(),
           nom: formData.nom.trim(),
           email: formData.email.trim(),
-          telephone: formData.telephone.trim()
+          'Téléphone': formData.telephone.trim(),
+          entreprise_secteur: formData.entreprise.trim(),
+          besoin_principal: formData.besoin.trim()
         }]);
 
       if (error) {
@@ -79,16 +83,17 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
       }
       
       toast({
-        title: "Merci !",
-        description: "Nous vous enverrons un devis personnalisé par email",
+        title: "Demande de démonstration reçue !",
+        description: "Nous vous contacterons sous 24h pour programmer votre démonstration gratuite",
       });
 
       // Reset form
       setFormData({
-        prenom: '',
         nom: '',
         email: '',
-        telephone: ''
+        telephone: '',
+        entreprise: '',
+        besoin: ''
       });
       
       onClose();
@@ -125,18 +130,7 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
           <div>
             <Input
               type="text"
-              placeholder="Prénom *"
-              value={formData.prenom}
-              onChange={(e) => handleInputChange('prenom', e.target.value)}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-pink-500"
-              required
-            />
-          </div>
-
-          <div>
-            <Input
-              type="text"
-              placeholder="Nom *"
+              placeholder="Nom complet *"
               value={formData.nom}
               onChange={(e) => handleInputChange('nom', e.target.value)}
               className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-pink-500"
@@ -166,17 +160,37 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
             />
           </div>
 
+          <div>
+            <Input
+              type="text"
+              placeholder="Entreprise / Secteur"
+              value={formData.entreprise}
+              onChange={(e) => handleInputChange('entreprise', e.target.value)}
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-pink-500"
+            />
+          </div>
+
+          <div>
+            <Textarea
+              placeholder="Décrivez votre besoin principal *"
+              value={formData.besoin}
+              onChange={(e) => handleInputChange('besoin', e.target.value)}
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-pink-500 min-h-[100px] resize-none"
+              required
+            />
+          </div>
+
           <Button
             type="submit"
             disabled={isSubmitting}
             className="w-full py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
           >
-            {isSubmitting ? "Envoi en cours..." : "Envoyer ma demande"}
+            {isSubmitting ? "Envoi en cours..." : "Demander ma démonstration gratuite"}
           </Button>
         </form>
 
         <p className="text-sm text-gray-500 text-center mt-4">
-          * Tous les champs sont obligatoires
+          * Champs obligatoires
         </p>
       </div>
     </div>
