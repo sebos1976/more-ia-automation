@@ -1,10 +1,10 @@
 
 import { useState } from "react";
-import { ContactForm } from "./ContactForm";
+import { DemoForm } from "./DemoForm";
 import { PartnersLogos } from "./PartnersLogos";
 
 export const Hero = () => {
-  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
+  const [isDemoFormOpen, setIsDemoFormOpen] = useState(false);
 
   return (
     <section id="accueil" className="py-8 px-6">
@@ -59,7 +59,7 @@ export const Hero = () => {
             
             {/* BOUTON CTA - PLEINE LARGEUR */}
             <button 
-              onClick={() => setIsContactFormOpen(true)}
+              onClick={() => setIsDemoFormOpen(true)}
               className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl text-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
               Obtenir une démonstration gratuite
@@ -127,9 +127,9 @@ export const Hero = () => {
         </div>
       </div>
 
-      <ContactForm 
-        isOpen={isContactFormOpen}
-        onClose={() => setIsContactFormOpen(false)}
+      <DemoForm 
+        isOpen={isDemoFormOpen}
+        onClose={() => setIsDemoFormOpen(false)}
       />
     </section>
   );

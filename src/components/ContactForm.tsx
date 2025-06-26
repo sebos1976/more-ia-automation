@@ -68,7 +68,7 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
 
     try {
       const { error } = await supabase
-        .from('contacts')
+        .from('CONTACTS')
         .insert([{
           nom: formData.nom.trim(),
           email: formData.email.trim(),
@@ -83,8 +83,8 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
       }
       
       toast({
-        title: "Demande de démonstration reçue !",
-        description: "Nous vous contacterons sous 24h pour programmer votre démonstration gratuite",
+        title: "Demande reçue !",
+        description: "Nous vous contacterons sous 24h",
       });
 
       // Reset form
