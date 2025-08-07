@@ -6,6 +6,7 @@ import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
 interface DemoFormData {
+  prenom: string;
   nom: string;
   email: string;
   telephone: string;
@@ -18,6 +19,7 @@ interface DemoFormProps {
 
 export const DemoForm = ({ isOpen, onClose }: DemoFormProps) => {
   const [formData, setFormData] = useState<DemoFormData>({
+    prenom: '',
     nom: '',
     email: '',
     telephone: ''
@@ -30,9 +32,9 @@ export const DemoForm = ({ isOpen, onClose }: DemoFormProps) => {
   };
 
   const validateForm = () => {
-    const { nom, email, telephone } = formData;
+    const { prenom, nom, email, telephone } = formData;
     
-    if (!nom.trim() || !email.trim() || !telephone.trim()) {
+    if (!prenom.trim() || !nom.trim() || !email.trim() || !telephone.trim()) {
       toast({
         title: "Erreur",
         description: "Tous les champs sont obligatoires",
@@ -65,6 +67,7 @@ export const DemoForm = ({ isOpen, onClose }: DemoFormProps) => {
       const { error } = await supabase
         .from('helphoster_demo')
         .insert([{
+          prenom: formData.prenom.trim(),
           nom: formData.nom.trim(),
           email: formData.email.trim(),
           telephone: formData.telephone.trim()
@@ -82,6 +85,7 @@ export const DemoForm = ({ isOpen, onClose }: DemoFormProps) => {
 
       // Reset form
       setFormData({
+        prenom: '',
         nom: '',
         email: '',
         telephone: ''
@@ -121,7 +125,18 @@ export const DemoForm = ({ isOpen, onClose }: DemoFormProps) => {
           <div>
             <Input
               type="text"
-              placeholder="Nom complet *"
+              placeholder="Prénom *"
+              value={formData.prenom}
+              onChange={(e) => handleInputChange('prenom', e.target.value)}
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-pink-500"
+              required
+            />
+          </div>
+
+          <div>
+            <Input
+              type="text"
+              placeholder="Nom *"
               value={formData.nom}
               onChange={(e) => handleInputChange('nom', e.target.value)}
               className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-pink-500"
